@@ -29,7 +29,7 @@ const CTA = () => {
               </h2>
 
               <a
-                href="https://wa.me/447851823807"
+                href="https://wa.me/447952971273"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-fit items-center justify-center rounded-full bg-[var(--sowa-gold)] px-8 py-4 font-semibold text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold-soft)]"
@@ -58,7 +58,7 @@ const CTA = () => {
 
             {/* Call Button */}
             <a
-              href="https://wa.me/447851823807"
+              href="https://wa.me/447952971273"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-[var(--sowa-gold)] px-8 py-4 font-semibold text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold-soft)]"
