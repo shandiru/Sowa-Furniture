@@ -41,7 +41,7 @@ export default function ServicesSection() {
             return (
               <article
                 key={service.slug}
-                className="rounded-2xl border border-black/6 bg-[var(--sowa-white)] p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+                className="flex h-full flex-col rounded-2xl border border-black/6 bg-[var(--sowa-white)] p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
               >
                 <Icon className="mb-12 h-10 w-10 text-[var(--sowa-gold-deep)]" strokeWidth={1.5} />
 
@@ -54,8 +54,8 @@ export default function ServicesSection() {
                 </p>
 
                 <Link
-                  to={`/service/${service.slug}`}
-                  className="inline-flex rounded-full bg-[var(--sowa-ink)] px-4 py-2 text-xs font-semibold text-[var(--sowa-white)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
+                  to={service.detailPath}
+                  className="mt-auto inline-flex w-fit whitespace-nowrap rounded-full bg-[var(--sowa-ink)] px-4 py-2 text-xs font-semibold text-[var(--sowa-white)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
                 >
                   Learn More
                 </Link>

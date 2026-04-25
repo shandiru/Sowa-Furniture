@@ -2,6 +2,9 @@ import { motion as Motion, useScroll, useTransform } from "framer-motion";
 import { Check } from "lucide-react";
 import { useRef } from "react";
 
+const aboutImageSrc = "/images/gallery-sideboard.svg";
+const aboutFrontImageSrc = "/images/gallery-pub-lounge.svg";
+
 export default function AboutSection() {
   const ref = useRef(null);
 
@@ -16,25 +19,38 @@ export default function AboutSection() {
   return (
     <section id="about" ref={ref} className="overflow-hidden bg-[var(--sowa-white)] py-16 md:py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-2 lg:gap-16">
-        
-        {/* IMAGE STRUCTURE - blank placeholders */}
+        {/* Image */}
         <div className="relative order-1 lg:order-none">
-          <div className="relative z-10 w-[90%] lg:w-[80%]">
-            <div className="h-[420px] w-full rounded-[10px] bg-[var(--sowa-sand)] shadow-xl" />
+          <div className="relative z-10 w-[92%] overflow-hidden rounded-[18px] border border-[var(--sowa-gold-soft)] shadow-xl lg:w-[80%]">
+            <img
+              src={aboutImageSrc}
+              alt="Restored hospitality furniture at Sowa Furniture"
+              className="h-[420px] w-full object-cover"
+            />
 
             <Motion.div
               style={{ y: yBack }}
-              className="absolute left-5 top-5 z-20 w-[60%] lg:top-10"
+              className="absolute left-4 top-4 z-20 w-[58%] overflow-hidden rounded-[16px] border border-white/70 shadow-lg lg:left-6 lg:top-8"
             >
-              <div className="h-[230px] w-full rounded-[10px] bg-[#d9d1c1]" />
+              <img
+                src={aboutImageSrc}
+                alt="Furniture restoration close-up"
+                className="h-[220px] w-full object-cover"
+              />
             </Motion.div>
           </div>
 
           <Motion.div
             style={{ y: yFront }}
-            className="absolute -bottom-10 right-0 z-30 w-[60%] sm:w-[50%] lg:-right-5 lg:w-[85%]"
+            className="absolute -bottom-8 right-0 z-30 w-[58%] sm:w-[50%] lg:-right-5 lg:w-[78%]"
           >
-            <div className="h-[180px] w-full rounded-[10px] bg-[var(--sowa-gold)]" />
+            <div className="overflow-hidden rounded-[16px] border border-[var(--sowa-gold-soft)] bg-[var(--sowa-white)] shadow-lg">
+              <img
+                src={aboutFrontImageSrc}
+                alt="Furniture refurbishment workshop showcase"
+                className="h-[180px] w-full object-cover md:h-[220px]"
+              />
+            </div>
           </Motion.div>
         </div>
 

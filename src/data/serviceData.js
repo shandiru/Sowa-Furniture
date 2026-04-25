@@ -1,4 +1,4 @@
-export const services = [
+const serviceEntries = [
   {
     slug: "pub-bar-furniture-refurbishment",
     icon: "Armchair",
@@ -572,6 +572,11 @@ export const services = [
   },
 ];
 
+export const services = serviceEntries.map((service) => ({
+  ...service,
+  detailPath: `/service/${service.slug}`,
+}));
+
 export function getServiceBySlug(slug) {
-  return services.find((service) => service.slug === slug);
+  return services.find((service) => service.slug === decodeURIComponent(slug));
 }

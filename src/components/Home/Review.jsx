@@ -33,55 +33,57 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#f7f4ed] px-6 py-16">
+    <section className="relative overflow-hidden bg-[#f7f4ed] px-4 py-14 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-16">
+        <div className="mb-10 sm:mb-16">
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.24em] text-[var(--sowa-gold-deep)]">
             Testimonials
           </p>
 
-          <h2 className="text-[42px] font-bold leading-none text-[var(--sowa-ink)] md:text-[54px]">
+          <h2 className="text-[34px] font-bold leading-none text-[var(--sowa-ink)] sm:text-[42px] md:text-[54px]">
             Testimonials
           </h2>
 
-          <p className="mt-4 text-base text-[var(--sowa-ink-muted)]">
+          <p className="mt-4 text-sm text-[var(--sowa-ink-muted)] sm:text-base">
             What our customers say?
           </p>
         </div>
 
-        <div className="relative mx-auto h-[340px] max-w-7xl">
+        <div className="relative mx-auto h-[380px] max-w-7xl sm:h-[340px]">
           {reviews.map((review, index) => {
             const position = getPosition(index);
 
             return (
               <div
                 key={index}
-                className={`absolute top-0 rounded-xl border border-black/6 bg-[var(--sowa-white)] p-8 transition-all duration-500 ${
+                className={`absolute top-0 rounded-xl border border-black/6 bg-[var(--sowa-white)] p-6 transition-all duration-500 sm:p-8 ${
                   position === "center"
-                    ? "left-1/2 z-20 w-[520px] -translate-x-1/2 opacity-100 shadow-sm"
+                    ? "left-1/2 z-20 w-[calc(100vw-2rem)] max-w-[520px] -translate-x-1/2 opacity-100 shadow-sm sm:w-[520px]"
                     : position === "left"
-                    ? "left-[-70px] z-10 w-[430px] opacity-30"
-                    : "right-[-70px] z-10 w-[430px] opacity-30"
+                    ? "hidden left-[-70px] z-10 w-[430px] opacity-30 sm:block"
+                    : "hidden right-[-70px] z-10 w-[430px] opacity-30 sm:block"
                 }`}
               >
-                <div className="mb-7 flex items-start gap-4">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--sowa-gold-soft)] text-[var(--sowa-gold-deep)]">
+                <div className="mb-6 flex items-start gap-3 sm:mb-7 sm:gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--sowa-gold-soft)] text-[var(--sowa-gold-deep)] sm:h-11 sm:w-11">
                     <User size={20} />
                   </div>
 
-                  <div>
-                    <h3 className="text-[15px] font-semibold text-[var(--sowa-ink)]">
+                  <div className="min-w-0">
+                    <h3 className="text-sm font-semibold text-[var(--sowa-ink)] sm:text-[15px]">
                       {review.name}
                     </h3>
-                    <p className="text-xs text-[var(--sowa-ink-muted)]">{review.meta}</p>
+                    <p className="break-words text-xs leading-5 text-[var(--sowa-ink-muted)]">
+                      {review.meta}
+                    </p>
                   </div>
                 </div>
 
-                <p className="min-h-[138px] text-[16px] leading-[1.65] text-[var(--sowa-ink)]">
+                <p className="min-h-[168px] text-[15px] leading-[1.75] text-[var(--sowa-ink)] sm:min-h-[138px] sm:text-[16px] sm:leading-[1.65]">
                   "{review.text}"
                 </p>
 
-                <div className="mt-7 flex gap-1 text-[var(--sowa-gold)]">
+                <div className="mt-6 flex gap-1 text-[var(--sowa-gold)] sm:mt-7">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={17} fill="currentColor" />
                   ))}
