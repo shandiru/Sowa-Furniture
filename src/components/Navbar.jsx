@@ -1,16 +1,17 @@
 import { useEffect, useMemo, useState } from "react";
-import { Menu, MessageCircle, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { HashLink } from "react-router-hash-link";
 
 const leftNav = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
+  { label: "About", href: "/#about" },
 ];
 
 const rightNav = [
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Location", href: "#location" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Location", href: "/#location" },
 ];
 
 function Navbar() {
@@ -31,24 +32,25 @@ function Navbar() {
         <div className="relative mx-auto flex min-h-20 w-full max-w-7xl items-center justify-between gap-4">
           <nav className="hidden items-center gap-8 lg:flex">
             {leftNav.map((item) => (
-              <a key={item.label} href={item.href} className="sowa-nav-link">
+              <HashLink smooth key={item.label} to={item.href} className="sowa-nav-link">
                 {item.label}
-              </a>
+              </HashLink>
             ))}
           </nav>
 
-          <a
-            href="#home"
+          <HashLink
+            smooth
+            to="/#home"
             className="text-left text-2xl font-semibold tracking-[0.24em] text-white sm:text-3xl md:absolute md:left-1/2 md:-translate-x-1/2 md:text-4xl"
           >
             SOWA
-          </a>
+          </HashLink>
 
           <div className="hidden items-center justify-end gap-8 lg:flex">
             {rightNav.map((item) => (
-              <a key={item.label} href={item.href} className="sowa-nav-link">
+              <HashLink smooth key={item.label} to={item.href} className="sowa-nav-link">
                 {item.label}
-              </a>
+              </HashLink>
             ))}
           </div>
 
@@ -67,14 +69,15 @@ function Navbar() {
           <div className="border-t border-white/10 py-4 lg:hidden">
             <nav className="grid gap-3">
               {mobileNav.map((item) => (
-                <a
+                <HashLink
+                  smooth
                   key={item.label}
-                  href={item.href}
+                  to={item.href}
                   className="rounded-2xl border border-white/8 bg-white/4 px-4 py-3 text-sm uppercase tracking-[0.18em] text-white/88 transition hover:bg-white/10"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
-                </a>
+                </HashLink>
               ))}
 
              

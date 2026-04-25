@@ -17,7 +17,11 @@ export default function AboutSection() {
   const yFront = useTransform(scrollYProgress, [0, 1], [40, -40]);
 
   return (
-    <section id="about" ref={ref} className="overflow-hidden bg-[var(--sowa-white)] py-16 md:py-24">
+    <section
+      id="about"
+      ref={ref}
+      className="scroll-mt-24 overflow-hidden bg-[var(--sowa-white)] py-16 md:py-24"
+    >
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-2 lg:gap-16">
         {/* Image */}
         <div data-aos="fade-right" className="relative order-1 lg:order-none">

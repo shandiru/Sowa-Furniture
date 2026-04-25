@@ -20,7 +20,7 @@ const iconMap = {
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="bg-[#f2ede4] px-5 py-20">
+    <section id="services" className="scroll-mt-24 bg-[#f2ede4] px-5 py-20">
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 text-center">
           <p

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen w-full overflow-hidden">
+    <section id="home" className="relative min-h-screen w-full scroll-mt-24 overflow-hidden">
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"

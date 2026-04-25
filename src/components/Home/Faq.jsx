@@ -24,7 +24,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section id="faq" className="bg-[var(--sowa-white)] py-16 md:py-20">
+    <section id="faq" className="scroll-mt-24 bg-[var(--sowa-white)] py-16 md:py-20">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 md:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
         <div className="lg:sticky lg:top-10 lg:self-start">
           <p className="mb-5 text-sm font-bold uppercase tracking-wide text-[var(--sowa-gold-deep)]">

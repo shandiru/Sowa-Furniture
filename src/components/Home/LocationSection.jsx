@@ -1,6 +1,6 @@
 export default function LocationSection() {
   return (
-    <section id="location" className="bg-[var(--sowa-white)] py-16">
+    <section id="location" className="scroll-mt-24 bg-[var(--sowa-white)] py-16">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="overflow-hidden rounded-2xl border border-[var(--sowa-gold-soft)] shadow-sm">
           <iframe

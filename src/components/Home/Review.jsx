@@ -33,7 +33,10 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section id="testimonials" className="relative overflow-hidden bg-[#f7f4ed] px-4 py-14 sm:px-6 sm:py-16">
+    <section
+      id="testimonials"
+      className="relative scroll-mt-24 overflow-hidden bg-[#f7f4ed] px-4 py-14 sm:px-6 sm:py-16"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 sm:mb-16">
           <p
