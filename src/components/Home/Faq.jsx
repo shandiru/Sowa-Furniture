@@ -24,14 +24,14 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="bg-white py-16 md:py-20">
+    <section className="bg-[var(--sowa-white)] py-16 md:py-20">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 md:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
         <div className="lg:sticky lg:top-10 lg:self-start">
-          <p className="mb-5 text-sm font-bold uppercase tracking-wide text-[#b18857]">
+          <p className="mb-5 text-sm font-bold uppercase tracking-wide text-[var(--sowa-gold-deep)]">
             FAQ
           </p>
 
-          <h2 className="max-w-xl text-[34px] font-extrabold leading-[1.1] tracking-[-0.03em] text-black sm:text-[42px] lg:text-[48px]">
+          <h2 className="max-w-xl text-[34px] font-extrabold leading-[1.1] tracking-[-0.03em] text-[var(--sowa-ink)] sm:text-[42px] lg:text-[48px]">
             Frequently Asked Questions
           </h2>
         </div>
@@ -43,21 +43,21 @@ export default function FAQSection() {
             return (
               <div
                 key={index}
-                className="overflow-hidden rounded-2xl bg-[#f7f8fa] transition-all duration-300"
+                className="overflow-hidden rounded-2xl border border-black/6 bg-[#f8f7f2] transition-all duration-300"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                   className="flex w-full items-center justify-between gap-5 px-6 py-6 text-left md:px-7"
                 >
-                  <span className="text-[16px] font-bold leading-snug tracking-[-0.01em] text-black md:text-[18px]">
+                  <span className="text-[16px] font-bold leading-snug tracking-[-0.01em] text-[var(--sowa-ink)] md:text-[18px]">
                     {item.q}
                   </span>
 
                   <span
                     className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition duration-300 ${
                       isOpen
-                        ? "rotate-45 border-[#b18857] text-[#b18857]"
-                        : "border-[#cbd5e1] text-[#64748b]"
+                        ? "rotate-45 border-[var(--sowa-gold)] text-[var(--sowa-gold)]"
+                        : "border-black/10 text-[var(--sowa-ink-muted)]"
                     }`}
                   >
                     <Plus size={19} />
@@ -71,7 +71,7 @@ export default function FAQSection() {
                       : "grid-rows-[0fr] opacity-0"
                   }`}
                 >
-                  <p className="overflow-hidden px-6 pb-6 text-sm leading-relaxed text-[#5f6368] md:px-7 md:text-[15px]">
+                  <p className="overflow-hidden px-6 pb-6 text-sm leading-relaxed text-[var(--sowa-ink-muted)] md:px-7 md:text-[15px]">
                     {item.a}
                   </p>
                 </div>

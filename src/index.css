@@ -1,10 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
 :root {
-  --sowa-ink: #0a0a0a;
-  --sowa-ink-muted: #665d54;
-  --sowa-cream: #f3ecdf;
-  --sowa-sand: #e9dece;
+  --sowa-ink: #050505;
+  --sowa-ink-muted: #5f5f5f;
+  --sowa-cream: #f8f8f5;
+  --sowa-sand: #ece7dd;
+  --sowa-gold: #c9a227;
+  --sowa-gold-deep: #a88416;
+  --sowa-gold-soft: #efe2b2;
+  --sowa-white: #ffffff;
 }
 
 html {
@@ -16,7 +21,7 @@ body {
   min-width: 320px;
   background: var(--sowa-ink);
   color: var(--sowa-cream);
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
@@ -73,13 +78,13 @@ a {
 }
 
 .sowa-primary-button {
-  background: var(--sowa-cream);
-  color: #16120e;
+  background: var(--sowa-gold);
+  color: var(--sowa-ink);
 }
 
 .sowa-primary-button:hover {
   transform: translateY(-2px);
-  background: white;
+  background: var(--sowa-gold-soft);
 }
 
 .sowa-secondary-button {
@@ -100,7 +105,7 @@ a {
   gap: 0.75rem;
   align-self: flex-start;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(215, 186, 138, 0.18);
+  background: rgba(201, 162, 39, 0.18);
   padding: 1rem 1.4rem;
   font-size: 0.74rem;
   font-weight: 700;
@@ -116,7 +121,7 @@ a {
 .sowa-quote-button:hover {
   transform: translateY(-2px);
   border-color: rgba(255, 255, 255, 0.24);
-  background: rgba(215, 186, 138, 0.26);
+  background: rgba(201, 162, 39, 0.28);
 }
 
 .sowa-panel {

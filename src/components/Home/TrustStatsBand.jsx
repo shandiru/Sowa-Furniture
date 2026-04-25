@@ -2,9 +2,9 @@ export default function TrustStatsBand() {
   const brands = ["Logoipsum", "LOGOIPSUM", "Logoipsum", "Logoipsum", "Logoipsum"];
 
   return (
-    <section className="bg-white px-5 py-14">
+    <section className="bg-[var(--sowa-white)] px-5 py-14">
       <div className="mx-auto max-w-6xl text-center">
-        <p className="mx-auto max-w-2xl text-sm leading-relaxed text-[#4b4b4b] md:text-base">
+        <p className="mx-auto max-w-2xl text-sm leading-relaxed text-[var(--sowa-ink-muted)] md:text-base">
           Trusted by pubs, bars, restaurants and homeowners across Greater
           Manchester to breathe new life into their furniture.
         </p>
@@ -13,9 +13,9 @@ export default function TrustStatsBand() {
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="flex items-center justify-center gap-2 text-[#8f8580]"
+            className="flex items-center justify-center gap-2 text-[var(--sowa-gold-deep)]"
             >
-              <span className="h-8 w-8 rounded-full bg-[#8f8580]" />
+              <span className="h-8 w-8 rounded-full bg-[var(--sowa-gold)]" />
               <span className="text-xl font-bold tracking-tight">
                 {brand}
               </span>

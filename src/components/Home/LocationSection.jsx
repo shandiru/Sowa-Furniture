@@ -1,8 +1,8 @@
 export default function LocationSection() {
   return (
-    <section id="location" className="bg-white py-16">
+    <section id="location" className="bg-[var(--sowa-white)] py-16">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+        <div className="overflow-hidden rounded-2xl border border-[var(--sowa-gold-soft)] shadow-sm">
           <iframe
             title="Sowa Furniture Location"
             src="https://www.google.com/maps?q=Manchester,UK&output=embed"

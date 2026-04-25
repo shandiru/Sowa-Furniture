@@ -2,7 +2,7 @@ export default function ServiceGallery({ service }) {
   return (
     <section id="service-gallery" className="px-5 py-12 md:py-16">
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-[1.95rem] font-medium leading-tight text-[#1f1a17] md:text-[2rem]">
+        <h2 className="text-[1.95rem] font-medium leading-tight text-[var(--sowa-ink)] md:text-[2rem]">
           {service.galleryHeading || "Design Showcase / Gallery"}
         </h2>
 
@@ -10,7 +10,7 @@ export default function ServiceGallery({ service }) {
           {service.gallery.map((item, index) => (
             <article
               key={item.imageSrc || item.title || index}
-              className="overflow-hidden rounded-[1.45rem] border border-[#e6d8c8] bg-white shadow-[0_8px_18px_rgba(64,44,31,0.04)]"
+              className="overflow-hidden rounded-[1.45rem] border border-[var(--sowa-gold-soft)] bg-[var(--sowa-white)] shadow-[0_8px_18px_rgba(0,0,0,0.04)]"
             >
               {item.imageSrc ? (
                 <img

@@ -33,18 +33,18 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#f7f7f7] px-6 py-16">
+    <section className="relative overflow-hidden bg-[#f7f4ed] px-6 py-16">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.24em] text-[#b18857]">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.24em] text-[var(--sowa-gold-deep)]">
             Testimonials
           </p>
 
-          <h2 className="text-[42px] font-bold leading-none text-[#111] md:text-[54px]">
+          <h2 className="text-[42px] font-bold leading-none text-[var(--sowa-ink)] md:text-[54px]">
             Testimonials
           </h2>
 
-          <p className="mt-4 text-base text-[#a0a0a0]">
+          <p className="mt-4 text-base text-[var(--sowa-ink-muted)]">
             What our customers say?
           </p>
         </div>
@@ -56,7 +56,7 @@ export default function TestimonialsSection() {
             return (
               <div
                 key={index}
-                className={`absolute top-0 rounded-xl bg-white p-8 transition-all duration-500 ${
+                className={`absolute top-0 rounded-xl border border-black/6 bg-[var(--sowa-white)] p-8 transition-all duration-500 ${
                   position === "center"
                     ? "left-1/2 z-20 w-[520px] -translate-x-1/2 opacity-100 shadow-sm"
                     : position === "left"
@@ -65,23 +65,23 @@ export default function TestimonialsSection() {
                 }`}
               >
                 <div className="mb-7 flex items-start gap-4">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#eadfce] text-[#8a5f35]">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--sowa-gold-soft)] text-[var(--sowa-gold-deep)]">
                     <User size={20} />
                   </div>
 
                   <div>
-                    <h3 className="text-[15px] font-semibold text-[#222]">
+                    <h3 className="text-[15px] font-semibold text-[var(--sowa-ink)]">
                       {review.name}
                     </h3>
-                    <p className="text-xs text-[#9d9d9d]">{review.meta}</p>
+                    <p className="text-xs text-[var(--sowa-ink-muted)]">{review.meta}</p>
                   </div>
                 </div>
 
-                <p className="min-h-[138px] text-[16px] leading-[1.65] text-[#333]">
+                <p className="min-h-[138px] text-[16px] leading-[1.65] text-[var(--sowa-ink)]">
                   "{review.text}"
                 </p>
 
-                <div className="mt-7 flex gap-1 text-[#111]">
+                <div className="mt-7 flex gap-1 text-[var(--sowa-gold)]">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={17} fill="currentColor" />
                   ))}
@@ -94,7 +94,7 @@ export default function TestimonialsSection() {
         <div className="mt-2 flex items-center justify-center gap-5">
           <button
             onClick={prev}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-[#ddd] bg-white text-[#111] transition hover:bg-[#b18857] hover:text-white"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-[var(--sowa-white)] text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
           >
             <ChevronLeft size={20} />
           </button>
@@ -105,7 +105,7 @@ export default function TestimonialsSection() {
                 key={index}
                 onClick={() => setCurrent(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  current === index ? "w-7 bg-[#b18857]" : "w-2 bg-[#d8d8d8]"
+                  current === index ? "w-7 bg-[var(--sowa-gold)]" : "w-2 bg-[#d8d0c1]"
                 }`}
               />
             ))}
@@ -113,7 +113,7 @@ export default function TestimonialsSection() {
 
           <button
             onClick={next}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-[#ddd] bg-white text-[#111] transition hover:bg-[#b18857] hover:text-white"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-[var(--sowa-white)] text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
           >
             <ChevronRight size={20} />
           </button>

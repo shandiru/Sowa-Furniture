@@ -36,17 +36,17 @@ export default function Portfolio() {
   }, [resetAuto]);
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-[var(--sowa-white)] py-24">
       <div className="mx-auto max-w-7xl px-6">
         
         {/* HEADER (Massey Style) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-14">
           <div>
-            <span className="text-sm font-semibold text-[#b18857] uppercase tracking-wider">
+            <span className="text-sm font-semibold uppercase tracking-wider text-[var(--sowa-gold-deep)]">
               Our Services
             </span>
 
-            <h2 className="mt-3 text-4xl font-semibold text-[#111]">
+            <h2 className="mt-3 text-4xl font-semibold text-[var(--sowa-ink)]">
               Expert Furniture Restoration
               <br />
               & Craftsmanship
@@ -54,7 +54,7 @@ export default function Portfolio() {
           </div>
 
           <div className="flex flex-col justify-between gap-4">
-            <p className="text-gray-600 max-w-lg">
+            <p className="max-w-lg text-[var(--sowa-ink-muted)]">
               We collaborate with pubs, restaurants and homeowners across Manchester 
               to restore, repair and transform wooden furniture to a high standard.
             </p>
@@ -63,7 +63,7 @@ export default function Portfolio() {
               <button
                 onClick={() => { goTo(current - 1); resetAuto(); }}
                 disabled={current === 0}
-                className="w-10 h-10 rounded-full border border-gray-200 text-[#111] hover:bg-[#b18857] hover:text-white transition"
+                className="h-10 w-10 rounded-full border border-black/10 text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
               >
                 <ChevronLeft size={18} />
               </button>
@@ -71,13 +71,13 @@ export default function Portfolio() {
               <button
                 onClick={() => { goTo(current + 1); resetAuto(); }}
                 disabled={current === services.length - 1}
-                className="w-10 h-10 rounded-full border border-gray-200 text-[#111] hover:bg-[#b18857] hover:text-white transition"
+                className="h-10 w-10 rounded-full border border-black/10 text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
               >
                 <ChevronRight size={18} />
               </button>
 
-              <span className="text-sm text-gray-500">
-                <span className="font-semibold text-[#111]">
+              <span className="text-sm text-[var(--sowa-ink-muted)]">
+                <span className="font-semibold text-[var(--sowa-ink)]">
                   {String(current + 1).padStart(2, "0")}
                 </span>{" "}
                 / {String(services.length).padStart(2, "0")}
@@ -105,20 +105,20 @@ export default function Portfolio() {
                   transform: i === current ? "scale(1)" : "scale(0.95)",
                 }}
               >
-                <div className="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                <div className="group overflow-hidden rounded-2xl border border-black/10 bg-[var(--sowa-white)] shadow-sm transition hover:shadow-md">
 
                   {/* IMAGE PLACEHOLDER (Blank as requested) */}
-                  <div className="h-[220px] m-4 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400 text-sm">
+                  <div className="m-4 flex h-[220px] items-center justify-center rounded-xl bg-[#f3f0e8] text-sm text-[var(--sowa-ink-muted)]">
                     Image Placeholder
                   </div>
 
                   {/* TEXT */}
                   <div className="px-6 pb-6">
-                    <h3 className="text-lg font-semibold text-[#111] mb-2">
+                    <h3 className="mb-2 text-lg font-semibold text-[var(--sowa-ink)]">
                       {item.title}
                     </h3>
 
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-[var(--sowa-ink-muted)]">
                       High-quality refurbishment and restoration tailored for long-term durability.
                     </p>
                   </div>
@@ -139,7 +139,7 @@ export default function Portfolio() {
               style={{
                 width: i === current ? "26px" : "6px",
                 height: "6px",
-                background: i === current ? "#b18857" : "#ddd",
+                background: i === current ? "var(--sowa-gold)" : "#d7d0c3",
               }}
             />
           ))}

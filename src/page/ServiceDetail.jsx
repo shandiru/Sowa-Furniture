@@ -8,19 +8,19 @@ import { getServiceBySlug } from "../data/serviceData.js";
 
 function ServiceNotFound() {
   return (
-    <section className="min-h-[70vh] bg-[#f7f2eb] px-5 py-32 text-[#1f1a17]">
-      <div className="mx-auto max-w-3xl rounded-[2rem] border border-[#ddcfbf] bg-white p-10 text-center shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#6f5347]">
+    <section className="min-h-[70vh] bg-[#f7f4ed] px-5 py-32 text-[var(--sowa-ink)]">
+      <div className="mx-auto max-w-3xl rounded-[2rem] border border-[var(--sowa-gold-soft)] bg-[var(--sowa-white)] p-10 text-center shadow-sm">
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--sowa-gold-deep)]">
           Service not found
         </p>
         <h1 className="mt-4 text-4xl font-semibold">That service page does not exist yet.</h1>
-        <p className="mt-5 text-base leading-8 text-[#5d564e]">
+        <p className="mt-5 text-base leading-8 text-[var(--sowa-ink-muted)]">
           Add a new entry in <code>src/data/serviceData.js</code> and the page will become available
           automatically.
         </p>
         <Link
           to="/"
-          className="mt-8 inline-flex rounded-full bg-[#5a372d] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+          className="mt-8 inline-flex rounded-full bg-[var(--sowa-gold)] px-6 py-3 text-sm font-semibold text-[var(--sowa-ink)] transition hover:-translate-y-0.5 hover:bg-[var(--sowa-gold-soft)]"
         >
           Back To Home
         </Link>
@@ -38,7 +38,7 @@ export default function ServiceDetail() {
   }
 
   return (
-    <div className="bg-[#fcf8f2] text-[#1f1a17]">
+    <div className="bg-[#fcfaf6] text-[var(--sowa-ink)]">
       <ServiceHero service={service} />
       <ServiceOverview service={service} />
       <ServiceProcess service={service} />
