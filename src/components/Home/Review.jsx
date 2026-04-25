@@ -33,7 +33,7 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#f7f4ed] px-4 py-14 sm:px-6 sm:py-16">
+    <section id="testimonials" className="relative overflow-hidden bg-[#f7f4ed] px-4 py-14 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 sm:mb-16">
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.24em] text-[var(--sowa-gold-deep)]">

@@ -2,7 +2,7 @@ import React from "react";
 
 const CTA = () => {
   return (
-    <section className="bg-[var(--sowa-white)] py-12">
+    <section id="contact" className="bg-[var(--sowa-white)] py-12">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
 

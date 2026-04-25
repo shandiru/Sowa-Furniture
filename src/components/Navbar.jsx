@@ -1,27 +1,34 @@
-import { useMemo, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { Menu, MessageCircle, X } from "lucide-react";
 
 const leftNav = [
-  { label: "Collections", href: "#collections" },
-  { label: "Concept", href: "#concept" },
-  { label: "Showroom", href: "#showroom" },
-  { label: "Fabrics", href: "#fabrics" },
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "About", href: "#about" },
 ];
 
 const rightNav = [
-  { label: "Delivery", href: "#delivery" },
-  { label: "Research", href: "#research" },
-  { label: "Basket (2)", href: "#basket" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "FAQ", href: "#faq" },
+  { label: "Location", href: "#location" },
 ];
 
 function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const mobileNav = useMemo(() => [...leftNav, ...rightNav], []);
 
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
   return (
     <header className="fixed inset-x-0 top-0 z-50">
-      <div className="mx-auto mt-3 w-[min(96%,1880px)] rounded-full border border-white/10 bg-black/30 px-4 backdrop-blur-xl md:px-6">
-        <div className="grid min-h-20 grid-cols-[1fr_auto_1fr] items-center gap-4">
+      <div className="w-full bg-black/40 px-4 backdrop-blur-xl md:px-6">
+        <div className="relative mx-auto flex min-h-20 w-full max-w-7xl items-center justify-between gap-4">
           <nav className="hidden items-center gap-8 lg:flex">
             {leftNav.map((item) => (
               <a key={item.label} href={item.href} className="sowa-nav-link">
@@ -32,7 +39,7 @@ function Navbar() {
 
           <a
             href="#home"
-            className="justify-self-center text-center text-3xl font-semibold tracking-[0.32em] text-white sm:text-4xl"
+            className="text-left text-2xl font-semibold tracking-[0.24em] text-white sm:text-3xl md:absolute md:left-1/2 md:-translate-x-1/2 md:text-4xl"
           >
             SOWA
           </a>
@@ -47,9 +54,10 @@ function Navbar() {
 
           <button
             type="button"
-            className="justify-self-end rounded-full border border-white/15 p-3 text-white lg:hidden"
+            className="ml-auto rounded-full border border-white/15 bg-white/5 p-3 text-white transition hover:bg-white/10 lg:hidden"
             onClick={() => setMobileOpen((current) => !current)}
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
@@ -62,12 +70,14 @@ function Navbar() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="rounded-2xl border border-white/8 bg-white/4 px-4 py-3 text-sm uppercase tracking-[0.2em] text-white/88"
+                  className="rounded-2xl border border-white/8 bg-white/4 px-4 py-3 text-sm uppercase tracking-[0.18em] text-white/88 transition hover:bg-white/10"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
                 </a>
               ))}
+
+             
             </nav>
           </div>
         )}
