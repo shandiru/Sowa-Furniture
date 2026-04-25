@@ -7,26 +7,20 @@ import Review from "../components/Home/Review.jsx";
 import FAQSection from "../components/Home/Faq.jsx";
 import LocationSection from "../components/Home/LocationSection.jsx";
 import CTA from "../components/Home/Cta.jsx";
+
 function Home() {
   return (
-    
-     
-
-     <>
-     <Hero />
-        <TrustStatsBand />
-        <ServicesSection />
-        <Portfolio />
-        <AboutSection />
-        <Review />
-        <FAQSection />
-        <LocationSection />
-        <CTA /></>
-        
-     
-
-    
-
+    <>
+      <Hero />
+      <TrustStatsBand />
+      <ServicesSection />
+      <Portfolio />
+      <AboutSection />
+      <Review />
+      <FAQSection />
+      <LocationSection />
+      <CTA />
+    </>
   );
 }
 

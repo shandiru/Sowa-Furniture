@@ -36,20 +36,31 @@ export default function TestimonialsSection() {
     <section id="testimonials" className="relative overflow-hidden bg-[#f7f4ed] px-4 py-14 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 sm:mb-16">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.24em] text-[var(--sowa-gold-deep)]">
+          <p
+            data-aos="fade-up"
+            className="mb-3 text-xs font-bold uppercase tracking-[0.24em] text-[var(--sowa-gold-deep)]"
+          >
             Testimonials
           </p>
 
-          <h2 className="text-[34px] font-bold leading-none text-[var(--sowa-ink)] sm:text-[42px] md:text-[54px]">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="80"
+            className="text-[34px] font-bold leading-none text-[var(--sowa-ink)] sm:text-[42px] md:text-[54px]"
+          >
             Testimonials
           </h2>
 
-          <p className="mt-4 text-sm text-[var(--sowa-ink-muted)] sm:text-base">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="120"
+            className="mt-4 text-sm text-[var(--sowa-ink-muted)] sm:text-base"
+          >
             What our customers say?
           </p>
         </div>
 
-        <div className="relative mx-auto h-[380px] max-w-7xl sm:h-[340px]">
+        <div data-aos="zoom-in-up" className="relative mx-auto h-[380px] max-w-7xl sm:h-[340px]">
           {reviews.map((review, index) => {
             const position = getPosition(index);
 
@@ -93,7 +104,7 @@ export default function TestimonialsSection() {
           })}
         </div>
 
-        <div className="mt-2 flex items-center justify-center gap-5">
+        <div data-aos="fade-up" data-aos-delay="160" className="mt-2 flex items-center justify-center gap-5">
           <button
             onClick={prev}
             className="flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-[var(--sowa-white)] text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
