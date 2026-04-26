@@ -23,7 +23,7 @@ function Footer() {
               restaurants, and bespoke hospitality spaces.
             </p>
             <div className="mt-4 space-y-2 text-sm text-white/64">
-              <p>Manchester, United Kingdom</p>
+              <p>M40 2HJ, Lord North Street, Gate 1</p>
               <a
                 href="tel:+447952971273"
                 className="block transition hover:text-white"
