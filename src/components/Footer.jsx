@@ -17,7 +17,14 @@ function Footer() {
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 border-t border-white/8 pt-10 lg:grid-cols-[1.15fr_0.85fr_0.7fr]">
           <div>
-            <p className="text-2xl font-medium text-white">SOWA Furniture</p>
+            <div className="flex items-center gap-4">
+              <img
+                src="/logo.jpg"
+                alt="SOWA Furniture logo"
+                className="h-14 w-14 rounded-full border border-white/12 bg-white/10 object-cover"
+              />
+              <p className="text-2xl font-medium text-white">SOWA Furniture</p>
+            </div>
             <p className="mt-3 max-w-md text-base leading-8 text-white/70">
               Manchester furniture refurbishment specialists for pubs, bars,
               restaurants, and bespoke hospitality spaces.

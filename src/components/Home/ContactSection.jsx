@@ -250,6 +250,11 @@ export default function ContactSection() {
         </div>
 
         <div className="rounded-[1.75rem] border border-[var(--sowa-gold-soft)] bg-[rgba(255,255,255,0.82)] p-8 shadow-[0_18px_50px_rgba(0,0,0,0.06)] backdrop-blur-sm">
+          <img
+            src="/logo.jpg"
+            alt="SOWA Furniture logo"
+            className="mb-4 h-16 w-16 rounded-full border border-[var(--sowa-gold)]/30 bg-white object-cover shadow-sm"
+          />
           <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.26em] text-[var(--sowa-gold-soft)]">
             CONTACT DETAILS
           </p>
