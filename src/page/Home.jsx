@@ -6,6 +6,7 @@ import AboutSection from "../components/Home/About.jsx";
 import Review from "../components/Home/Review.jsx";
 import FAQSection from "../components/Home/Faq.jsx";
 import LocationSection from "../components/Home/LocationSection.jsx";
+import ContactSection from "../components/Home/ContactSection.jsx";
 import CTA from "../components/Home/Cta.jsx";
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
       <Review />
       <FAQSection />
       <LocationSection />
+      <ContactSection />
       <CTA />
     </>
   );
