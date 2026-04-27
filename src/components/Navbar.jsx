@@ -41,9 +41,14 @@ function Navbar() {
           <HashLink
             smooth
             to="/#home"
-            className="text-left text-2xl font-semibold tracking-[0.24em] text-white sm:text-3xl md:absolute md:left-1/2 md:-translate-x-1/2 md:text-4xl"
+            className="text-left md:absolute md:left-1/2 md:-translate-x-1/2"
+            aria-label="SOWA Furniture home"
           >
-            SOWA
+            <img
+              src="/logo.jpg"
+              alt="SOWA Furniture logo"
+              className="h-12 w-auto rounded-full border border-white/15 bg-white/10 object-cover sm:h-14"
+            />
           </HashLink>
 
           <div className="hidden items-center justify-end gap-8 lg:flex">
