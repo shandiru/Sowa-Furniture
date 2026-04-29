@@ -43,7 +43,7 @@ function Navbar() {
             to="/#home"
             className="text-left text-2xl font-semibold tracking-[0.24em] text-white sm:text-3xl md:absolute md:left-1/2 md:-translate-x-1/2 md:text-4xl"
           >
-            SOWA
+            <img src="images/sowa-logo-without-bg.png" alt="Sowa Logo" className="h-8 w-auto sm:h-10 md:h-12" />
           </HashLink>
 
           <div className="hidden items-center justify-end gap-8 lg:flex">
