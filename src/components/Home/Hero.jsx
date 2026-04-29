@@ -3,15 +3,20 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen w-full scroll-mt-24 overflow-hidden">
-      {/* Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{
-          backgroundImage:
-            "url('https://timbercompany.ancorathemes.com/wp-content/uploads/2023/09/168_1-1.jpg')",
-        }}
-      />
+    <section
+      id="home"
+      className="relative min-h-screen w-full scroll-mt-24 overflow-hidden"
+    >
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 h-full w-full object-cover scale-105"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="videos/sowa-hero-banner.mp4" type="video/mp4" />
+      </video>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60" />
