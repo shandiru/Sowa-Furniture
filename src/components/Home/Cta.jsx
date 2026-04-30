@@ -16,12 +16,11 @@ const CTA = () => {
 
             <div className="relative z-10 flex h-full flex-col justify-center p-10 md:p-14">
               <span className="mb-4 font-semibold uppercase tracking-[0.18em] text-[var(--sowa-gold-soft)]">
-                Need a faster conversation about your project?
+                GOT FURNITURE THAT NEEDS A NEW LEASE OF LIFE?
               </span>
 
               <h2 className="mb-8 text-4xl font-extrabold leading-tight text-[var(--sowa-white)] md:text-5xl">
-                Let&apos;s talk through your furniture brief and the best route
-                for your venue.
+                Let&apos;s discuss your furniture and find the right refurbishment solution.
               </h2>
 
               <a
@@ -38,15 +37,13 @@ const CTA = () => {
           <div className="flex flex-col justify-between rounded-3xl bg-[var(--sowa-ink)] p-10">
             <div>
               <img
-                src="tag.jpeg"
+                src="/images/sowa-logo.jpg"
                 alt="SOWA Furniture team"
                 className="mb-6 h-16 w-16 rounded-full border-2 border-[var(--sowa-gold)] bg-[var(--sowa-white)]/10 object-cover"
               />
 
               <h3 className="mb-8 text-lg font-semibold leading-relaxed text-[var(--sowa-white)]">
-                Share photos, measurements or a quick overview of the work you
-                need and we&apos;ll help you shape the right refurbishment,
-                reupholstery or made-to-measure solution.
+                 This is Tomasz, founder of Sowa Furniture.<br/> I'm here to personally answer your questions and help you find the best solution for your pub, bar, restaurant or home furniture.
               </h3>
             </div>
 
@@ -56,7 +53,7 @@ const CTA = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-[var(--sowa-gold)] px-8 py-4 font-semibold text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold-soft)]"
             >
-              Chat on WhatsApp
+              Start a WhatsApp Chat
             </a>
           </div>
         </div>
