@@ -7,7 +7,7 @@ const CTA = () => {
         <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
           <div className="relative overflow-hidden rounded-3xl lg:col-span-2">
             <img
-              src="/Exterior-a.jpeg"
+              src="/images/pub-bar-service-hero.svg"
               alt="SOWA Furniture workshop support"
               className="absolute inset-0 h-full w-full object-cover"
             />

@@ -19,7 +19,12 @@ export default function ServiceGallery({ service }) {
                   className="block h-72 w-full object-cover"
                 />
               ) : (
-                <div className="h-72 w-full" style={{ background: item.gradient }} />
+                <div
+                  className="h-72 w-full"
+                  style={{ background: item.gradient }}
+                  role="img"
+                  aria-label={item.title || service.galleryHeading || "Gallery item"}
+                />
               )}
             </article>
           ))}

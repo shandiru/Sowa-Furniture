@@ -6,9 +6,9 @@ const pageLinks = [
   { label: "Home", href: "/#home" },
   { label: "Services", href: "/#services" },
   { label: "About", href: "/#about" },
-  { label: "Testimonials", href: "/#testimonials" },
-  { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: "/#contact" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Location", href: "/#location" },
 ];
 
 function Footer() {
