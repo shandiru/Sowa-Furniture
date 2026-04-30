@@ -69,9 +69,9 @@ export default function ContactSection() {
       id="contact"
     >
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-100"
+        className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
-          backgroundImage: "url('pexels-photo-17045319-2880w.webp')",
+          backgroundImage: "url('/images/gallery-kitchen.svg')",
         }}
       ></div>
 

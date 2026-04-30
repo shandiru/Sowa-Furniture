@@ -1,6 +1,7 @@
 import { motion as Motion, useScroll, useTransform } from "framer-motion";
 import { Check } from "lucide-react";
 import { useRef } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const aboutImageSrc = "/images/gallery-sideboard.svg";
 const aboutFrontImageSrc = "/images/gallery-pub-lounge.svg";
@@ -111,14 +112,15 @@ export default function AboutSection() {
             ))}
           </div>
 
-          <a
-            href="/about"
+          <HashLink
+            smooth
+            to="/#contact"
             data-aos="fade-up"
             data-aos-delay="320"
             className="block w-full rounded-md bg-[var(--sowa-gold)] px-7 py-3.5 text-center text-[15px] font-semibold uppercase tracking-[0.18em] text-[var(--sowa-ink)] shadow-lg transition hover:bg-[var(--sowa-gold-soft)] md:w-auto"
           >
-            About Us
-          </a>
+            Get in Touch
+          </HashLink>
         </div>
       </div>
     </section>

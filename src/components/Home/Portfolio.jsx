@@ -107,9 +107,12 @@ export default function Portfolio() {
               >
                 <div className="group overflow-hidden rounded-2xl border border-black/10 bg-[var(--sowa-white)] shadow-sm transition hover:shadow-md">
 
-                  {/* IMAGE PLACEHOLDER (Blank as requested) */}
-                  <div className="m-4 flex h-[220px] items-center justify-center rounded-xl bg-[#f3f0e8] text-sm text-[var(--sowa-ink-muted)]">
-                    Image Placeholder
+                  <div className="m-4 flex h-[220px] items-center justify-center rounded-xl bg-[#f3f0e8]">
+                    <img
+                      src="/images/sowa-logo-without-bg.png"
+                      alt="SOWA Furniture"
+                      className="h-16 w-auto opacity-40"
+                    />
                   </div>
 
                   {/* TEXT */}

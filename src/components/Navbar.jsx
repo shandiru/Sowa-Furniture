@@ -9,7 +9,7 @@ const leftNav = [
 ];
 
 const rightNav = [
-  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Contact", href: "/#contact" },
   { label: "FAQ", href: "/#faq" },
   { label: "Location", href: "/#location" },
 ];
@@ -85,8 +85,6 @@ function Navbar() {
                   {item.label}
                 </HashLink>
               ))}
-
-             
             </nav>
           </div>
         )}

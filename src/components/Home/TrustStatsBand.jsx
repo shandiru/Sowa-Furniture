@@ -1,5 +1,5 @@
 export default function TrustStatsBand() {
-  const brands = ["Logoipsum", "LOGOIPSUM", "Logoipsum", "Logoipsum", "Logoipsum"];
+  const brands = ["Logoipsum", "Logoipsum", "Logoipsum", "Logoipsum", "Logoipsum"];
 
   return (
     <section className="bg-[var(--sowa-white)] px-5 py-14">
