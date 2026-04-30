@@ -16,19 +16,25 @@ const rightNav = [
 
 function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const mobileNav = useMemo(() => [...leftNav, ...rightNav], []);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
-
     return () => {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <header className="fixed inset-x-0 top-0 z-50">
-      <div className="w-full bg-black/40 px-4 backdrop-blur-xl md:px-6">
+      <div className={`w-full px-4 backdrop-blur-xl transition-colors duration-300 md:px-6 ${scrolled ? "bg-black/85" : "bg-black/40"}`}>
         <div className="relative mx-auto flex min-h-20 w-full max-w-7xl items-center justify-between gap-4">
           <nav className="hidden items-center gap-8 lg:flex">
             {leftNav.map((item) => (
