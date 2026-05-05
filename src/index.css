@@ -24,6 +24,10 @@ body {
   font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
+p {
+  font-weight: 600;
+}
+
 a {
   text-decoration: none;
 }

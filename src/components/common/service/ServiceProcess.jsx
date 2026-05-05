@@ -16,7 +16,7 @@ export default function ServiceProcess({ service }) {
                 border: "1px solid rgba(201, 162, 39, 0.18)",
               }}
             >
-              <p className="text-[1.15rem] font-normal tracking-[-0.02em] text-[var(--sowa-gold-deep)]">
+              <p className="text-[1.15rem] font-semibold tracking-[-0.02em] text-[var(--sowa-gold-deep)]">
                 {String(index + 1).padStart(2, "0")}.
               </p>
               <h3 className="mt-12 text-[1.05rem] font-medium leading-[1.25] text-[var(--sowa-ink)] md:text-[1.15rem]">

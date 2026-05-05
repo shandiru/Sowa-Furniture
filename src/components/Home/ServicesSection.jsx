@@ -25,7 +25,7 @@ export default function ServicesSection() {
         <div className="mb-10 text-center">
           <p
             data-aos="fade-up"
-            className="mb-4 text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--sowa-gold-deep)]"
+            className="mb-4 text-[10px] font-semibold uppercase tracking-[0.25em] text-[var(--sowa-gold-deep)]"
           >
             Our Services
           </p>

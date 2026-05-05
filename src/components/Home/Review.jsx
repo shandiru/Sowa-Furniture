@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
         <div className="mb-10 sm:mb-16">
           <p
             data-aos="fade-up"
-            className="mb-3 text-xs font-bold uppercase tracking-[0.24em] text-[var(--sowa-gold-deep)]"
+            className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--sowa-gold-deep)]"
           >
             Testimonials
           </p>
