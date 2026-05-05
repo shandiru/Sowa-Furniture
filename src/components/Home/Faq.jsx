@@ -27,7 +27,7 @@ export default function FAQSection() {
     <section id="faq" className="scroll-mt-24 bg-[var(--sowa-white)] py-16 md:py-20">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 md:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
         <div className="lg:sticky lg:top-10 lg:self-start">
-          <p className="mb-5 text-sm font-bold uppercase tracking-wide text-[var(--sowa-gold-deep)]">
+          <p className="mb-5 text-sm font-semibold uppercase tracking-wide text-[var(--sowa-gold-deep)]">
             FAQ
           </p>
 

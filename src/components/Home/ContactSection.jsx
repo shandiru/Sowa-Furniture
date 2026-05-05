@@ -79,7 +79,7 @@ export default function ContactSection() {
 
       <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-2">
         <div className="rounded-[1.75rem] border border-[var(--sowa-gold-soft)] bg-[rgba(255,255,255,0.9)] p-8 shadow-[0_18px_50px_rgba(0,0,0,0.08)] backdrop-blur-sm">
-          <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.26em] text-[var(--sowa-gold-soft)]">
+          <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.26em] text-[var(--sowa-gold-soft)]">
             ORDER ENQUIRY
           </p>
           <h2 className="mb-6 text-2xl font-bold leading-tight text-[var(--sowa-ink)] md:text-[2rem]">
@@ -250,7 +250,7 @@ export default function ContactSection() {
         </div>
 
         <div className="rounded-[1.75rem] border border-[var(--sowa-gold-soft)] bg-[rgba(255,255,255,0.82)] p-8 shadow-[0_18px_50px_rgba(0,0,0,0.06)] backdrop-blur-sm">
-          <p className="mb-3 text-[12px] font-bold uppercase tracking-[0.26em] text-[var(--sowa-gold-soft)]">
+          <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.26em] text-[var(--sowa-gold-soft)]">
             CONTACT DETAILS
           </p>
           <h2 className="mb-4 text-2xl font-bold text-[var(--sowa-ink)] md:text-[2rem]">

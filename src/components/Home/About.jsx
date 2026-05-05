@@ -62,7 +62,7 @@ export default function AboutSection() {
         <div className="mt-12 lg:mt-0 lg:pl-10">
           <p
             data-aos="fade-up"
-            className="mb-4 text-[12px] font-bold uppercase tracking-[0.26em] text-[var(--sowa-gold-deep)] md:text-[13px]"
+            className="mb-4 text-[12px] font-semibold uppercase tracking-[0.26em] text-[var(--sowa-gold-deep)] md:text-[13px]"
           >
             ABOUT SOWA FURNITURE
           </p>
