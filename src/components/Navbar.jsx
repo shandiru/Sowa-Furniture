@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
 
 const leftNav = [
-  { label: "Home", href: "/#home" },
+  { label: "Home", href: "/#" },
   { label: "Services", href: "/#services" },
   { label: "About", href: "/#about" },
 ];
@@ -32,7 +32,7 @@ function Navbar() {
         <div className="relative mx-auto flex min-h-20 w-full max-w-7xl items-center justify-between gap-4">
           <nav className="hidden items-center gap-8 lg:flex">
             {leftNav.map((item) => (
-              <HashLink smooth key={item.label} to={item.href} className="sowa-nav-link">
+              <HashLink smooth key={item.label} to={item.href} className="sowa-nav-link font-bold">
                 {item.label}
               </HashLink>
             ))}
@@ -40,15 +40,15 @@ function Navbar() {
 
           <HashLink
             smooth
-            to="/#home"
+            to="/#"
             className="text-left text-2xl font-semibold tracking-[0.24em] text-white sm:text-3xl md:absolute md:left-1/2 md:-translate-x-1/2 md:text-4xl"
           >
-            <img src="images/sowa-logo-without-bg.png" alt="Sowa Logo" className="h-8 w-auto sm:h-10 md:h-12" />
+            <img src="images/sowa-logo-without-bg.png" alt="Sowa Logo" className="h-8 w-auto sm:h-10 md:h-20 " />
           </HashLink>
 
           <div className="hidden items-center justify-end gap-8 lg:flex">
             {rightNav.map((item) => (
-              <HashLink smooth key={item.label} to={item.href} className="sowa-nav-link">
+              <HashLink smooth key={item.label} to={item.href} className="sowa-nav-link font-bold">
                 {item.label}
               </HashLink>
             ))}

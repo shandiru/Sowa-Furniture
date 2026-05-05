@@ -110,15 +110,6 @@ export default function AboutSection() {
               </div>
             ))}
           </div>
-
-          <a
-            href="/about"
-            data-aos="fade-up"
-            data-aos-delay="320"
-            className="block w-full rounded-md bg-[var(--sowa-gold)] px-7 py-3.5 text-center text-[15px] font-semibold uppercase tracking-[0.18em] text-[var(--sowa-ink)] shadow-lg transition hover:bg-[var(--sowa-gold-soft)] md:w-auto"
-          >
-            About Us
-          </a>
         </div>
       </div>
     </section>

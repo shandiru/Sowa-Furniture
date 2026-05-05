@@ -11,7 +11,7 @@ const serviceEntries = [
       "We specialise in refurbishing and restoring pub and bar furniture across Greater Manchester. Whether it's a full venue refit or a batch of worn bar stools, we strip, repair and refinish to a commercial standard - saving you thousands compared to buying new.",
     primaryAction: {
       label: "Get a Free Quote",
-      href: "#contact",
+      href: "/#contact",
     },
     secondaryAction: {
       label: "View Our Work",
@@ -96,7 +96,7 @@ const serviceEntries = [
       "We help restaurants and cafes keep their interiors polished with practical repair work, careful finish matching and refurbishment that suits brand-led spaces.",
     primaryAction: {
       label: "Book Site Visit",
-      href: "#contact",
+      href: "/#contact",
     },
     secondaryAction: {
       label: "See The Process",
@@ -193,7 +193,7 @@ const serviceEntries = [
       "When timber surfaces lose their finish, collect marks or start to look tired, we renew them with sanding, repair and tough protective systems suited to regular use.",
     primaryAction: {
       label: "Request Surface Review",
-      href: "#contact",
+      href: "/#contact",
     },
     secondaryAction: {
       label: "Explore Finish Options",
@@ -290,7 +290,7 @@ const serviceEntries = [
       "Fresh fabrics, stronger padding and a cleaner finish can transform tired seating without replacing the entire furniture package.",
     primaryAction: {
       label: "Discuss Seating Refresh",
-      href: "#contact",
+      href: "/#contact",
     },
     secondaryAction: {
       label: "Browse Service Layout",
@@ -387,7 +387,7 @@ const serviceEntries = [
       "From one-off statement pieces to fitted solutions, we make custom furniture that solves layout issues while keeping the craftsmanship front and centre.",
     primaryAction: {
       label: "Start Custom Brief",
-      href: "#contact",
+      href: "/#contact",
     },
     secondaryAction: {
       label: "View Build Stages",
@@ -484,7 +484,7 @@ const serviceEntries = [
       "A practical collection service for hospitality businesses that need to clear good furniture without sending everything to waste.",
     primaryAction: {
       label: "Send Furniture List",
-      href: "#contact",
+      href: "/#contact",
     },
     secondaryAction: {
       label: "How It Works",

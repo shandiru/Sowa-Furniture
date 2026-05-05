@@ -54,7 +54,7 @@ export default function ServicesSection() {
               >
                 <Icon className="mb-12 h-10 w-10 text-[var(--sowa-gold-deep)]" strokeWidth={1.5} />
 
-                <h3 className="mb-4 text-xl font-medium text-[var(--sowa-ink)]">
+                <h3 className="mb-4 text-[25px] font-medium text-[var(--sowa-ink)]">
                   {service.title}
                 </h3>
 

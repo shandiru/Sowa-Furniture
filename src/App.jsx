@@ -9,6 +9,7 @@ import TermsConditions from "./page/TermsConditions.jsx";
 import { Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollToHash from "./components/ScrollToHash.jsx";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
   return (
     <div>
       <ScrollToTop />
+      <ScrollToHash />
       <Navbar />
 
       <main>

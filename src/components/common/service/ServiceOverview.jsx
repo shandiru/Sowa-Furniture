@@ -1,6 +1,6 @@
 export default function ServiceOverview({ service }) {
   return (
-    <section id="service-overview" className="border-t border-[var(--sowa-gold-soft)] px-5 py-12 md:py-14">
+    <section id="service-overview" className="border-t border-[var(--sowa-gold-soft)] scroll-m-10 px-5 py-12 md:py-14">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-5xl">
           <h2 className="text-[1.95rem] font-medium leading-tight text-[var(--sowa-ink)] md:text-[2rem]">

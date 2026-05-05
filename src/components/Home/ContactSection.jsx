@@ -65,7 +65,7 @@ export default function ContactSection() {
 
   return (
     <section
-      className="relative bg-[var(--sowa-white)] py-20 text-[var(--sowa-ink)]"
+      className="relative bg-[var(--sowa-white)] py-20 text-[var(--sowa-ink)] scroll-m-10"
       id="contact"
     >
       <div

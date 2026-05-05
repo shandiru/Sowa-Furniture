@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ServiceHero({ service }) {
   const { theme, category, label, title, heroDescription, primaryAction, secondaryAction, heroVisual } =
     service;
@@ -27,18 +29,18 @@ export default function ServiceHero({ service }) {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <a
-              href={primaryAction.href}
+            <Link
+              to={primaryAction.href}
               className="inline-flex min-w-[208px] items-center justify-center rounded-full bg-[var(--sowa-gold)] px-6 py-3.5 text-sm font-semibold text-[var(--sowa-ink)] transition hover:-translate-y-0.5 hover:bg-[var(--sowa-gold-soft)]"
             >
               {primaryAction.label}
-            </a>
-            <a
-              href={secondaryAction.href}
+            </Link>
+            <Link
+              to={secondaryAction.href}
               className="inline-flex min-w-[168px] items-center justify-center rounded-full border border-[var(--sowa-gold-soft)] bg-[var(--sowa-white)] px-6 py-3.5 text-sm font-semibold text-[var(--sowa-ink)] transition hover:-translate-y-0.5"
             >
               {secondaryAction.label}
-            </a>
+            </Link>
           </div>
         </div>
 

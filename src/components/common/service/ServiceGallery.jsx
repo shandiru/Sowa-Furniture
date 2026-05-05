@@ -1,6 +1,6 @@
 export default function ServiceGallery({ service }) {
   return (
-    <section id="service-gallery" className="px-5 py-12 md:py-16">
+    <section id="service-gallery" className="px-5 py-12 md:py-16 scroll-m-10">
       <div className="mx-auto max-w-7xl">
         <h2 className="text-[1.95rem] font-medium leading-tight text-[var(--sowa-ink)] md:text-[2rem]">
           {service.galleryHeading || "Design Showcase / Gallery"}

@@ -1,6 +1,6 @@
 export default function ServiceProcess({ service }) {
   return (
-    <section id="service-process" className="px-5 py-4 md:py-6">
+    <section id="service-process" className="px-5 py-4 md:py-6 scroll-m-10">
       <div className="mx-auto max-w-7xl">
         <h2 className="text-[2rem] font-medium leading-tight text-[var(--sowa-ink)] md:text-[2.1rem]">
           {service.processHeading || "Our Process"}
