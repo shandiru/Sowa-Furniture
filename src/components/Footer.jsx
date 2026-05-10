@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const pageLinks = [
-  { label: "Home", href: "/#home" },
+  { label: "Home", href: "/#" },
   { label: "Services", href: "/#services" },
   { label: "About", href: "/#about" },
   { label: "Testimonials", href: "/#testimonials" },
@@ -23,7 +23,7 @@ function Footer() {
               restaurants, and bespoke hospitality spaces.
             </p>
             <div className="mt-4 space-y-2 text-sm text-white/64">
-              <p>M40 2HJ, Lord North Street, Gate 1</p>
+              <p> M40 2HJ, Lord North Street, Gate 1</p>
               <a
                 href="tel:+447952971273"
                 className="block transition hover:text-white"
@@ -41,10 +41,10 @@ function Footer() {
               </a>
             </div>
             <div className="mt-6 flex items-center gap-4 text-white/82">
-              <a href="https://instagram.com" className="sowa-icon-link" aria-label="Instagram">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="sowa-icon-link" aria-label="Instagram">
                 <Instagram size={18} />
               </a>
-              <a href="https://youtube.com" className="sowa-icon-link" aria-label="YouTube">
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="sowa-icon-link" aria-label="YouTube">
                 <Youtube size={18} />
               </a>
             </div>

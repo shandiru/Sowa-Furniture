@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Instagram, MessageCircle, Phone, Youtube } from "lucide-react";
+import { useState, useRef } from "react";
+import { Instagram, MessageCircle, Phone, Youtube, CheckCircle2, AlertCircle } from "lucide-react";
 
 const WHATSAPP_BASE_URL = "https://wa.me/447952971273";
 const PHONE_LINK = "tel:+447952971273";
@@ -8,8 +8,8 @@ const INSTAGRAM_URL = "https://instagram.com";
 const YOUTUBE_URL = "https://youtube.com";
 const ADDRESS = {
   line1: "SOWA Furniture",
-  line2: "Lord North Street, Gate 1",
-  line3: "Manchester, M40 2HJ",
+  line2: "M40 2HJ",
+  line3: "Lord North Street, Gate 1", 
 };
 
 const initialFormState = {
@@ -29,6 +29,8 @@ const inputClassName =
 
 export default function ContactSection() {
   const [form, setForm] = useState(initialFormState);
+  const [status, setStatus] = useState({ type: "", message: "" });
+  const formTopRef = useRef(null);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -36,10 +38,22 @@ export default function ContactSection() {
       ...current,
       [name]: value,
     }));
+    if (status.type === 'error') setStatus({ type: "", message: "" });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    // Scroll to top of form to see the message
+    formTopRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+
+    if (!form.productType || !form.quantity || !form.description || !form.colour) {
+      setStatus({ 
+        type: "error", 
+        message: "Please fill in all required fields marked with (*) before sending." 
+      });
+      return;
+    }
 
     const messageLines = [
       "Hello SOWA Furniture, I'd like to place an order / request a quote.",
@@ -59,13 +73,21 @@ export default function ContactSection() {
       messageLines.join("\n"),
     )}`;
 
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-    setForm(initialFormState);
+    setStatus({ 
+      type: "success", 
+      message: "Success! Opening WhatsApp to send your request..." 
+    });
+    
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      setForm(initialFormState);
+      setTimeout(() => setStatus({ type: "", message: "" }), 6000);
+    }, 1500);
   };
 
   return (
     <section
-      className="relative bg-[var(--sowa-white)] py-20 text-[var(--sowa-ink)] scroll-m-10"
+      className="relative bg-[var(--sowa-white)] py-15 text-[var(--sowa-ink)] scroll-m-10"
       id="contact"
     >
       <div
@@ -78,7 +100,22 @@ export default function ContactSection() {
       <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.94),rgba(248,248,245,0.9),rgba(239,226,178,0.45))]"></div>
 
       <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-2">
-        <div className="rounded-[1.75rem] border border-[var(--sowa-gold-soft)] bg-[rgba(255,255,255,0.9)] p-8 shadow-[0_18px_50px_rgba(0,0,0,0.08)] backdrop-blur-sm">
+        <div 
+          ref={formTopRef}
+          className="rounded-[1.75rem] border border-[var(--sowa-gold-soft)] bg-[rgba(255,255,255,0.9)] p-8 shadow-[0_18px_50px_rgba(0,0,0,0.08)] backdrop-blur-sm"
+        >
+          {/* TOP PLACED STATUS MESSAGE */}
+          {status.message && (
+            <div className={`mb-6 flex items-center gap-3 rounded-xl p-4 text-sm font-semibold transition-all animate-in fade-in slide-in-from-top-2 ${
+              status.type === 'success' 
+              ? 'bg-[var(--sowa-gold)] text-[var(--sowa-ink)] shadow-lg' 
+              : 'bg-red-100 text-red-800 border border-red-200'
+            }`}>
+              {status.type === 'success' ? <CheckCircle2 size={20} /> : <AlertCircle size={20} />}
+              {status.message}
+            </div>
+          )}
+
           <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.26em] text-[var(--sowa-gold-soft)]">
             ORDER ENQUIRY
           </p>
@@ -90,7 +127,7 @@ export default function ContactSection() {
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <div>
                 <label className="text-sm font-medium text-[var(--sowa-gold-deep)]">
-                  Product type:
+                  Product type *
                 </label>
                 <input
                   type="text"
@@ -99,22 +136,21 @@ export default function ContactSection() {
                   onChange={handleChange}
                   placeholder="Bar stool, chair, table..."
                   className={inputClassName}
-                  required
                 />
               </div>
 
               <div>
                 <label className="text-sm font-medium text-[var(--sowa-gold-deep)]">
-                  Quantity:
+                  Quantity *
                 </label>
                 <input
                   type="number"
                   min="1"
                   name="quantity"
+                  placeholder="1, 2, 3..."
                   value={form.quantity}
                   onChange={handleChange}
                   className={inputClassName}
-                  required
                 />
               </div>
             </div>
@@ -122,15 +158,15 @@ export default function ContactSection() {
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <div>
                 <label className="text-sm font-medium text-[var(--sowa-gold-deep)]">
-                  Colour:
+                  Colour *
                 </label>
                 <input
                   type="text"
                   name="colour"
+                  placeholder="Natural wood, black, white..."
                   value={form.colour}
                   onChange={handleChange}
                   className={inputClassName}
-                  required
                 />
               </div>
 
@@ -171,6 +207,7 @@ export default function ContactSection() {
                 <input
                   type="text"
                   name="upholsteryColour"
+                  placeholder="Natural wood, black, white..."
                   value={form.upholsteryColour}
                   onChange={handleChange}
                   className={inputClassName}
@@ -210,7 +247,7 @@ export default function ContactSection() {
 
             <div>
               <label className="text-sm font-medium text-[var(--sowa-gold-deep)]">
-                Description
+                Description *
               </label>
               <textarea
                 name="description"
@@ -219,15 +256,15 @@ export default function ContactSection() {
                 onChange={handleChange}
                 className={inputClassName}
                 placeholder="Add notes about style, venue use, lead time or matching requirements."
-                required
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--sowa-gold)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold-soft)]"
+              disabled={status.type === 'success'}
+              className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--sowa-gold)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold-soft)] disabled:opacity-70 disabled:cursor-not-allowed"
             >
-              Send via WhatsApp
+              {status.type === 'success' ? "Processing Request..." : "Send via WhatsApp"}
             </button>
           </form>
 
@@ -249,6 +286,7 @@ export default function ContactSection() {
           </div>
         </div>
 
+        {/* Right Side Column remains unchanged as requested */}
         <div className="rounded-[1.75rem] border border-[var(--sowa-gold-soft)] bg-[rgba(255,255,255,0.82)] p-8 shadow-[0_18px_50px_rgba(0,0,0,0.06)] backdrop-blur-sm">
           <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.26em] text-[var(--sowa-gold-soft)]">
             CONTACT DETAILS
@@ -274,7 +312,7 @@ export default function ContactSection() {
               href={WHATSAPP_BASE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 transition hover:text-[var(--sowa-gold-soft)]"
+              className="inline-flex items-center gap-2 transition hover:text-[var(--sowa-gold)]"
             >
               <MessageCircle size={18} />
               WhatsApp us directly
@@ -322,8 +360,9 @@ export default function ContactSection() {
             </p>
             <div className="rounded border border-[var(--sowa-gold)]/18 bg-[var(--sowa-white)] p-4 text-sm leading-7 text-[var(--sowa-ink-muted)]">
               <p>SOWA Furniture</p>
-              <p>Lord North Street, Gate 1</p>
-              <p>Manchester, M40 2HJ</p>
+              <p>M40 2HJ,</p>
+              <p> Lord North Street, Gate 1</p>
+              
               <a
                 href={PHONE_LINK}
                 className="mt-3 inline-flex items-center gap-2 text-[var(--sowa-ink)] transition hover:text-[var(--sowa-gold-deep)]"

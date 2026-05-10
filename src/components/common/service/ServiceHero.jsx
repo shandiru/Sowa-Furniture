@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export default function ServiceHero({ service }) {
   const { theme, category, label, title, heroDescription, primaryAction, secondaryAction, heroVisual } =
     service;
@@ -29,18 +27,18 @@ export default function ServiceHero({ service }) {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <Link
-              to={primaryAction.href}
+            <a
+              href={primaryAction.href}
               className="inline-flex min-w-[208px] items-center justify-center rounded-full bg-[var(--sowa-gold)] px-6 py-3.5 text-sm font-semibold text-[var(--sowa-ink)] transition hover:-translate-y-0.5 hover:bg-[var(--sowa-gold-soft)]"
             >
               {primaryAction.label}
-            </Link>
-            <Link
-              to={secondaryAction.href}
+            </a>
+            <a
+              href={secondaryAction.href}
               className="inline-flex min-w-[168px] items-center justify-center rounded-full border border-[var(--sowa-gold-soft)] bg-[var(--sowa-white)] px-6 py-3.5 text-sm font-semibold text-[var(--sowa-ink)] transition hover:-translate-y-0.5"
             >
               {secondaryAction.label}
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -48,18 +46,12 @@ export default function ServiceHero({ service }) {
           className="relative min-h-[360px] overflow-hidden rounded-[2rem] border border-[var(--sowa-gold-soft)] shadow-[0_18px_60px_rgba(0,0,0,0.08)] md:min-h-[430px]"
           style={{ background: heroVisual.gradient }}
         >
-          {heroVisual.imageSrc ? (
+          {heroVisual.imageSrc && (
             <img
               src={heroVisual.imageSrc}
               alt={heroVisual.imageAlt || title}
               className="block h-full min-h-[360px] w-full object-cover md:min-h-[430px]"
             />
-          ) : (
-            <div className="flex min-h-[360px] items-end bg-[linear-gradient(135deg,rgba(255,255,255,0.18),rgba(255,255,255,0.04))] p-8 md:min-h-[430px]">
-              <div className="max-w-sm rounded-[1.5rem] bg-white/78 px-5 py-4 text-sm leading-7 text-[var(--sowa-ink-muted)] backdrop-blur-sm">
-                Add `heroVisual.imageSrc` in `serviceData.js` to show a real service image here.
-              </div>
-            </div>
           )}
         </div>
       </div>

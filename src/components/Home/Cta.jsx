@@ -2,12 +2,13 @@ import React from "react";
 
 const CTA = () => {
   return (
-    <section className="bg-[var(--sowa-white)] py-12">
+    <section className="bg-[var(--sowa-white)] py-15">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
           <div className="relative overflow-hidden rounded-3xl lg:col-span-2">
             <img
               src="/Exterior-a.jpeg"
+              loading="lazy"
               alt="SOWA Furniture workshop support"
               className="absolute inset-0 h-full w-full object-cover"
             />
@@ -19,7 +20,7 @@ const CTA = () => {
                 Need a faster conversation about your project?
               </span>
 
-              <h2 className="mb-8 text-4xl font-extrabold leading-tight text-[var(--sowa-white)] md:text-5xl">
+              <h2 className="mb-8 text-xl sm:text-4xl font-extrabold leading-tight text-[var(--sowa-white)] md:text-5xl">
                 Let&apos;s talk through your furniture brief and the best route
                 for your venue.
               </h2>
@@ -38,8 +39,9 @@ const CTA = () => {
           <div className="flex flex-col justify-between rounded-3xl bg-[var(--sowa-ink)] p-10">
             <div>
               <img
-                src="tag.jpeg"
+                src="/sowa-logo-without-bg.png"
                 alt="SOWA Furniture team"
+                loading="lazy"
                 className="mb-6 h-16 w-16 rounded-full border-2 border-[var(--sowa-gold)] bg-[var(--sowa-white)]/10 object-cover"
               />
 

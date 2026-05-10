@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 export default function TrustStatsBand() {
   // Replace these with your actual image paths
   const brands = [
-    { name: "la turaka", src: "/images/l1.png" },
-    { name: "Z", src: "/images/l3.png" },
-    { name: "Istanbull grill", src: "/images/l2.png" },
-    { name: "Bar 51", src: "/images/l4.png" },
+    { name: "la turaka", src: "/l1.png" },
+    { name: "Z", src: "/l3.png" },
+    { name: "Istanbull grill", src: "/l2.png" },
+    { name: "Bar 51", src: "/l4.png" },
   ];
 
   const duplicatedBrands = [...brands, ...brands];
 
   return (
-    <section className="bg-[var(--sowa-white)] py-14 overflow-hidden">
+    <section className="bg-[var(--sowa-white)] py-15 overflow-hidden">
       <div className="mx-auto max-w-5xl px-5 text-center">
         <p className="mx-auto max-w-2xl text-sm leading-relaxed text-[var(--sowa-ink-muted)] md:text-base mb-12">
           Trusted by pubs, bars, restaurants and homeowners across Greater
@@ -37,6 +37,7 @@ export default function TrustStatsBand() {
                 <img
                   src={brand.src}
                   alt={brand.name}
+                  loading="lazy"
                   className="h-20 w-auto object-contain transition-all"
                   // h-12 keeps them consistent; object-contain prevents stretching
                 />

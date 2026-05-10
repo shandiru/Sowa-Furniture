@@ -25,7 +25,7 @@ const serviceEntries = [
       ink: "#1f1714",
     },
     heroVisual: {
-      imageSrc: "/images/pub-bar-service-hero.svg",
+      imageSrc: "/pub-bar-service-hero.svg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -68,19 +68,19 @@ const serviceEntries = [
     galleryHeading: "Before & After Gallery",
     gallery: [
       {
-        imageSrc: "/images/gallery-pub-lounge.svg",
+        imageSrc: "/gallery-pub-lounge.svg",
         imageAlt: "Pub lounge furniture restoration showcase",
       },
       {
-        imageSrc: "/images/gallery-sideboard.svg",
+        imageSrc: "/gallery-sideboard.svg",
         imageAlt: "Hospitality furniture sideboard showcase",
       },
       {
-        imageSrc: "/images/gallery-kitchen.svg",
+        imageSrc: "/gallery-kitchen.svg",
         imageAlt: "Custom kitchen joinery showcase",
       },
       {
-        imageSrc: "/images/gallery-reception.svg",
+        imageSrc: "/gallery-reception.svg",
         imageAlt: "Reception furniture showcase",
       },
     ],
@@ -110,17 +110,10 @@ const serviceEntries = [
       ink: "#261915",
     },
     heroVisual: {
-      eyebrow: "Dining spaces with daily wear",
-      title: "Refreshed restaurant furniture with finishes that still feel design-led.",
-      description:
-        "Ideal for cafes, dining rooms and hospitality groups that need consistency across every table and seat.",
+      imageSrc: "/pub-bar-service-hero.svg",
+      imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
-        "linear-gradient(135deg, #f4e7d8 0%, #d1ae8c 40%, #8c583f 100%)",
-      cards: [
-        "Booth seating refresh",
-        "Dining chair repairs",
-        "Finish consistency at scale",
-      ],
+        "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
     },
     overview: [
       "Restaurant and cafe furniture needs to look welcoming while standing up to constant use. We refurbish seating, tables and feature timber details so the space feels maintained, intentional and guest-ready.",
@@ -207,17 +200,10 @@ const serviceEntries = [
       ink: "#241810",
     },
     heroVisual: {
-      eyebrow: "High-contact timber restoration",
-      title: "Tabletops and bar tops renewed for touch, tone and durability.",
-      description:
-        "A focused service for visible timber surfaces that shape the feel of the room.",
+      imageSrc: "/pub-bar-service-hero.svg",
+      imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
-        "linear-gradient(135deg, #fbf2e8 0%, #cfa67b 42%, #70462f 100%)",
-      cards: [
-        "Scratch and stain correction",
-        "Durable topcoat systems",
-        "Finish matching for existing interiors",
-      ],
+        "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
     },
     overview: [
       "Visible timber surfaces set the tone of a bar, dining room or lounge. We restore worn table tops and counters so they look clean, rich and properly maintained again.",
@@ -304,17 +290,10 @@ const serviceEntries = [
       ink: "#241717",
     },
     heroVisual: {
-      eyebrow: "Comfort and finish upgrade",
-      title: "Commercial seating reupholstered to feel sharper, cleaner and more durable.",
-      description:
-        "Ideal for venues where seating condition shapes the guest experience.",
+      imageSrc: "/pub-bar-service-hero.svg",
+      imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
-        "linear-gradient(135deg, #f5e8e0 0%, #d3b1a6 45%, #6d413b 100%)",
-      cards: [
-        "Banquette and booth updates",
-        "Bar stool pad replacement",
-        "Hospitality-grade fabric options",
-      ],
+        "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
     },
     overview: [
       "Commercial seating wears quickly in hospitality settings. Our reupholstery service helps you improve comfort, cleanliness and appearance without starting again from scratch.",
@@ -401,17 +380,10 @@ const serviceEntries = [
       ink: "#1f1714",
     },
     heroVisual: {
-      eyebrow: "Built around the room",
-      title: "Custom furniture designed to fit your layout, brand and day-to-day use.",
-      description:
-        "A tailored build service for hospitality venues, reception areas and bespoke interior projects.",
+      imageSrc: "/pub-bar-service-hero.svg",
+      imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
-        "linear-gradient(135deg, #f6ece3 0%, #d3b298 44%, #78533e 100%)",
-      cards: [
-        "Tables, counters and fitted pieces",
-        "Joinery-sized to your space",
-        "Built around use, style and circulation",
-      ],
+        "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
     },
     overview: [
       "When off-the-shelf furniture does not fit the layout or look of the space, we design and build bespoke timber pieces to suit the project.",
@@ -498,17 +470,10 @@ const serviceEntries = [
       ink: "#201a15",
     },
     heroVisual: {
-      eyebrow: "Clearance with value recovery",
-      title: "Used hospitality furniture collected, assessed and rehomed through refurbishment.",
-      description:
-        "A useful route for venues that want space back and furniture handled responsibly.",
+      imageSrc: "/pub-bar-service-hero.svg",
+      imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
-        "linear-gradient(135deg, #f1e9df 0%, #ccb18f 46%, #6d5b43 100%)",
-      cards: [
-        "Tables, chairs and stools considered",
-        "Reuse-first workshop approach",
-        "Helpful for refurbishments and closures",
-      ],
+        "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
     },
     overview: [
       "We purchase hospitality furniture that still has useful life left in it. It is a straightforward option for venues that are refurbishing, downsizing or replacing older stock.",

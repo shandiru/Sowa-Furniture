@@ -15,7 +15,7 @@ export default function HeroSection() {
         muted
         playsInline
       >
-        <source src="videos/sowa-hero-banner.mp4" type="video/mp4" />
+        <source src="/sowa-hero-banner.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}

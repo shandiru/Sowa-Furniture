@@ -2,8 +2,8 @@ import { motion as Motion, useScroll, useTransform } from "framer-motion";
 import { Check } from "lucide-react";
 import { useRef } from "react";
 
-const aboutImageSrc = "/images/gallery-sideboard.svg";
-const aboutFrontImageSrc = "/images/gallery-pub-lounge.svg";
+const aboutImageSrc = "/gallery-sideboard.svg";
+const aboutFrontImageSrc = "/gallery-pub-lounge.svg";
 
 export default function AboutSection() {
   const ref = useRef(null);
@@ -20,7 +20,7 @@ export default function AboutSection() {
     <section
       id="about"
       ref={ref}
-      className="scroll-mt-24 overflow-hidden bg-[var(--sowa-white)] py-16 md:py-24"
+      className="scroll-mt-24 overflow-hidden bg-[var(--sowa-white)] py-15"
     >
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-2 lg:gap-16">
         {/* Image */}
@@ -28,6 +28,7 @@ export default function AboutSection() {
           <div className="relative z-10 w-[92%] overflow-hidden rounded-[18px] border border-[var(--sowa-gold-soft)] shadow-xl lg:w-[80%]">
             <img
               src={aboutImageSrc}
+              loading="lazy"
               alt="Restored hospitality furniture at Sowa Furniture"
               className="h-[420px] w-full object-cover"
             />
@@ -38,6 +39,7 @@ export default function AboutSection() {
             >
               <img
                 src={aboutImageSrc}
+                loading="lazy"
                 alt="Furniture restoration close-up"
                 className="h-[220px] w-full object-cover"
               />
@@ -51,6 +53,7 @@ export default function AboutSection() {
             <div className="overflow-hidden rounded-[16px] border border-[var(--sowa-gold-soft)] bg-[var(--sowa-white)] shadow-lg">
               <img
                 src={aboutFrontImageSrc}
+                loading="lazy"
                 alt="Furniture refurbishment workshop showcase"
                 className="h-[180px] w-full object-cover md:h-[220px]"
               />

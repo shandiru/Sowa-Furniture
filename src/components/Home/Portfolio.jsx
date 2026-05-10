@@ -36,7 +36,7 @@ export default function Portfolio() {
   }, [resetAuto]);
 
   return (
-    <section className="bg-[var(--sowa-white)] py-24">
+    <section className="bg-[var(--sowa-white)] py-15">
       <div className="mx-auto max-w-7xl px-6">
         
         {/* HEADER (Massey Style) */}
@@ -65,7 +65,7 @@ export default function Portfolio() {
                 disabled={current === 0}
                 className="h-10 w-10 rounded-full border border-black/10 text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
               >
-                <ChevronLeft size={18} />
+                <ChevronLeft size={18} className="ml-2"/>
               </button>
 
               <button
@@ -73,7 +73,7 @@ export default function Portfolio() {
                 disabled={current === services.length - 1}
                 className="h-10 w-10 rounded-full border border-black/10 text-[var(--sowa-ink)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
               >
-                <ChevronRight size={18} />
+                <ChevronRight size={18} className="ml-2"/>
               </button>
 
               <span className="text-sm text-[var(--sowa-ink-muted)]">
@@ -104,7 +104,7 @@ export default function Portfolio() {
                   opacity: Math.abs(i - current) <= 1 ? 1 : 0.3,
                   transform: i === current ? "scale(1)" : "scale(0.95)",
                 }}
-              >
+              > 
                 <div className="group overflow-hidden rounded-2xl border border-black/10 bg-[var(--sowa-white)] shadow-sm transition hover:shadow-md">
 
                   {/* IMAGE PLACEHOLDER (Blank as requested) */}

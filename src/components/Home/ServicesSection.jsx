@@ -20,7 +20,7 @@ const iconMap = {
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="scroll-mt-24 bg-[#f2ede4] px-5 py-20">
+    <section id="services" className="scroll-mt-24 bg-[#f2ede4] px-5 py-15">
       <div className="mx-auto max-w-5xl">
         <div className="mb-10 text-center">
           <p
@@ -54,17 +54,17 @@ export default function ServicesSection() {
               >
                 <Icon className="mb-12 h-10 w-10 text-[var(--sowa-gold-deep)]" strokeWidth={1.5} />
 
-                <h3 className="mb-4 text-[25px] font-medium text-[var(--sowa-ink)]">
+                <h3 className="mb-4 text-3xl font-bold text-[var(--sowa-ink)]">
                   {service.title}
                 </h3>
 
-                <p className="mb-5 text-sm leading-relaxed text-[var(--sowa-ink-muted)]">
+                <p className="mb-5 text-lg font-semibold leading-relaxed text-[var(--sowa-ink-muted)]">
                   {service.shortDescription}
                 </p>
 
                 <Link
                   to={service.detailPath}
-                  className="mt-auto inline-flex w-fit whitespace-nowrap rounded-full bg-[var(--sowa-ink)] px-4 py-2 text-xs font-semibold text-[var(--sowa-white)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
+                  className="mt-auto inline-flex w-fit  whitespace-nowrap rounded-full bg-[var(--sowa-ink)] px-4 py-2  font-semibold text-[var(--sowa-white)] transition hover:bg-[var(--sowa-gold)] hover:text-[var(--sowa-ink)]"
                 >
                   Learn More
                 </Link>

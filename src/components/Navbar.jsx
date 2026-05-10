@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const leftNav = [
@@ -16,19 +17,42 @@ const rightNav = [
 
 function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { pathname } = useLocation();
   const mobileNav = useMemo(() => [...leftNav, ...rightNav], []);
+  const isHomePage = pathname === "/";
+  const navbarBackgroundClass = isHomePage
+    ? scrolled
+      ? "bg-black/90 shadow-lg"
+      : "bg-transparent"
+    : "bg-black/90 shadow-lg";
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
-
     return () => {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
 
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
   return (
     <header className="fixed inset-x-0 top-0 z-50">
-      <div className="w-full bg-black/40 px-4 backdrop-blur-xl md:px-6">
+      <div
+        className={`w-full px-4 backdrop-blur-xl transition-all duration-300 md:px-6 ${navbarBackgroundClass}`}
+      >
         <div className="relative mx-auto flex min-h-20 w-full max-w-7xl items-center justify-between gap-4">
           <nav className="hidden items-center gap-8 lg:flex">
             {leftNav.map((item) => (
@@ -43,7 +67,12 @@ function Navbar() {
             to="/#"
             className="text-left text-2xl font-semibold tracking-[0.24em] text-white sm:text-3xl md:absolute md:left-1/2 md:-translate-x-1/2 md:text-4xl"
           >
-            <img src="images/sowa-logo-without-bg.png" alt="Sowa Logo" className="h-8 w-auto sm:h-10 md:h-20 " />
+            <img
+              src="/sowa-logo-without-bg.png"
+              loading="lazy"
+              alt="Sowa Logo"
+              className="h-20 w-auto sm:h-10 md:h-20"
+            />
           </HashLink>
 
           <div className="hidden items-center justify-end gap-8 lg:flex">
@@ -58,8 +87,6 @@ function Navbar() {
             type="button"
             className="ml-auto rounded-full border border-white/15 bg-white/5 p-3 text-white transition hover:bg-white/10 lg:hidden"
             onClick={() => setMobileOpen((current) => !current)}
-            aria-label="Toggle menu"
-            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
@@ -79,8 +106,6 @@ function Navbar() {
                   {item.label}
                 </HashLink>
               ))}
-
-             
             </nav>
           </div>
         )}

@@ -15,6 +15,7 @@ export default function ServiceGallery({ service }) {
               {item.imageSrc ? (
                 <img
                   src={item.imageSrc}
+                  loading="lazy"
                   alt={item.imageAlt || service.galleryHeading || "Service gallery image"}
                   className="block h-72 w-full object-cover"
                 />
