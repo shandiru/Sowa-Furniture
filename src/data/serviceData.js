@@ -148,30 +148,22 @@ const serviceEntries = [
           "Completed pieces come back ready for service with an upgraded overall presentation.",
       },
     ],
-    gallery: [
+       gallery: [
       {
-        title: "Dining set refresh",
-        caption: "A softer, warmer timber expression for front-of-house seating zones.",
-        gradient:
-          "linear-gradient(160deg, #5a372d 0%, #c28760 50%, #f4e5d7 100%)",
+        imageSrc: "/gallery-pub-lounge.svg",
+        imageAlt: "Pub lounge furniture restoration showcase",
       },
       {
-        title: "Cafe counter seating",
-        caption: "Compact furniture repaired and refinished for everyday turnover.",
-        gradient:
-          "linear-gradient(160deg, #efe1d4 0%, #d8b79e 55%, #7d513a 100%)",
+        imageSrc: "/gallery-sideboard.svg",
+        imageAlt: "Hospitality furniture sideboard showcase",
       },
       {
-        title: "Banquette timber trim",
-        caption: "Detail-led restoration where visible edges and trim matter.",
-        gradient:
-          "linear-gradient(160deg, #f5efe8 0%, #c59d77 52%, #5f3928 100%)",
+        imageSrc: "/gallery-kitchen.svg",
+        imageAlt: "Custom kitchen joinery showcase",
       },
       {
-        title: "Multi-site consistency",
-        caption: "A repeatable standard for hospitality groups and branded environments.",
-        gradient:
-          "linear-gradient(160deg, #dbc5b2 0%, #a26f52 48%, #2f1f1a 100%)",
+        imageSrc: "/gallery-reception.svg",
+        imageAlt: "Reception furniture showcase",
       },
     ],
   },
@@ -238,30 +230,22 @@ const serviceEntries = [
           "Once cured, the renewed surfaces are ready to go back into hospitality use.",
       },
     ],
-    gallery: [
+       gallery: [
       {
-        title: "Deep walnut finish",
-        caption: "A richer topcoat direction for statement tabletops and counters.",
-        gradient:
-          "linear-gradient(160deg, #f5ecdf 0%, #c99664 50%, #5d3621 100%)",
+        imageSrc: "/gallery-pub-lounge.svg",
+        imageAlt: "Pub lounge furniture restoration showcase",
       },
       {
-        title: "Natural timber refresh",
-        caption: "Cleaned-back grain and lighter finishing for modern spaces.",
-        gradient:
-          "linear-gradient(160deg, #ead4bb 0%, #c39a6f 50%, #7a4d2f 100%)",
+        imageSrc: "/gallery-sideboard.svg",
+        imageAlt: "Hospitality furniture sideboard showcase",
       },
       {
-        title: "Counter edge detail",
-        caption: "Attention to edges and corners where wear shows up fastest.",
-        gradient:
-          "linear-gradient(160deg, #d9bda5 0%, #8f5b3a 48%, #2e1b15 100%)",
+        imageSrc: "/gallery-kitchen.svg",
+        imageAlt: "Custom kitchen joinery showcase",
       },
       {
-        title: "Coordinated table batch",
-        caption: "A consistent result across multiple tops prepared together.",
-        gradient:
-          "linear-gradient(160deg, #f9f4ee 0%, #d4af88 52%, #67412d 100%)",
+        imageSrc: "/gallery-reception.svg",
+        imageAlt: "Reception furniture showcase",
       },
     ],
   },
@@ -328,30 +312,22 @@ const serviceEntries = [
           "The finished seating returns ready to be reintroduced to the space as a complete package.",
       },
     ],
-    gallery: [
+       gallery: [
       {
-        title: "Banquette refresh",
-        caption: "Structured seating updated for cleaner lines and better comfort.",
-        gradient:
-          "linear-gradient(160deg, #f6eeea 0%, #c6a093 50%, #7b4a41 100%)",
+        imageSrc: "/gallery-pub-lounge.svg",
+        imageAlt: "Pub lounge furniture restoration showcase",
       },
       {
-        title: "Stool set recovery",
-        caption: "A consistent material finish across repeated seating types.",
-        gradient:
-          "linear-gradient(160deg, #ead5cf 0%, #b67f71 48%, #4d2e2b 100%)",
+        imageSrc: "/gallery-sideboard.svg",
+        imageAlt: "Hospitality furniture sideboard showcase",
       },
       {
-        title: "Lounge seating update",
-        caption: "A softer material direction for hospitality waiting and lounge spaces.",
-        gradient:
-          "linear-gradient(160deg, #fff7f2 0%, #d0b2a6 50%, #6a3e35 100%)",
+        imageSrc: "/gallery-kitchen.svg",
+        imageAlt: "Custom kitchen joinery showcase",
       },
       {
-        title: "Booth detail close-up",
-        caption: "Sharper seams, cleaner forms and renewed commercial resilience.",
-        gradient:
-          "linear-gradient(160deg, #f2e8e5 0%, #b98d82 55%, #56302e 100%)",
+        imageSrc: "/gallery-reception.svg",
+        imageAlt: "Reception furniture showcase",
       },
     ],
   },
@@ -418,30 +394,22 @@ const serviceEntries = [
           "Completed items are delivered and, where needed, positioned or installed to fit the space.",
       },
     ],
-    gallery: [
+        gallery: [
       {
-        title: "Living area statement piece",
-        caption: "Custom timber furniture built to anchor the room with warmth and scale.",
-        gradient:
-          "linear-gradient(160deg, #8e5f3d 0%, #d6ad82 45%, #f8ede0 100%)",
+        imageSrc: "/gallery-pub-lounge.svg",
+        imageAlt: "Pub lounge furniture restoration showcase",
       },
       {
-        title: "Feature sideboard concept",
-        caption: "Made-to-measure storage and display with a tailored furniture profile.",
-        gradient:
-          "linear-gradient(160deg, #f5ede4 0%, #c99d71 50%, #6d422b 100%)",
+        imageSrc: "/gallery-sideboard.svg",
+        imageAlt: "Hospitality furniture sideboard showcase",
       },
       {
-        title: "Kitchen joinery build",
-        caption: "A practical custom solution where layout and finish both matter.",
-        gradient:
-          "linear-gradient(160deg, #d6bca2 0%, #a6764d 50%, #3d281d 100%)",
+        imageSrc: "/gallery-kitchen.svg",
+        imageAlt: "Custom kitchen joinery showcase",
       },
       {
-        title: "Reception counter finish",
-        caption: "Bespoke front-of-house furniture designed around spatial requirements.",
-        gradient:
-          "linear-gradient(160deg, #fff8f1 0%, #d0a47e 55%, #714630 100%)",
+        imageSrc: "/gallery-reception.svg",
+        imageAlt: "Reception furniture showcase",
       },
     ],
   },
@@ -508,30 +476,22 @@ const serviceEntries = [
           "Suitable furniture enters the refurbishment pipeline rather than being discarded unnecessarily.",
       },
     ],
-    gallery: [
+        gallery: [
       {
-        title: "Batch pickup planning",
-        caption: "Clear-outs coordinated to keep venue transitions moving smoothly.",
-        gradient:
-          "linear-gradient(160deg, #f3ece1 0%, #d4be9e 50%, #72604a 100%)",
+        imageSrc: "/gallery-pub-lounge.svg",
+        imageAlt: "Pub lounge furniture restoration showcase",
       },
       {
-        title: "Workshop intake",
-        caption: "Furniture sorted and assessed for repair, refinishing and resale potential.",
-        gradient:
-          "linear-gradient(160deg, #dccab2 0%, #a68b69 50%, #4b3c2c 100%)",
+        imageSrc: "/gallery-sideboard.svg",
+        imageAlt: "Hospitality furniture sideboard showcase",
       },
       {
-        title: "Reuse-ready stock",
-        caption: "Good pieces kept in circulation through repair and finish work.",
-        gradient:
-          "linear-gradient(160deg, #f8f5ef 0%, #d8c2a4 52%, #62513d 100%)",
+        imageSrc: "/gallery-kitchen.svg",
+        imageAlt: "Custom kitchen joinery showcase",
       },
       {
-        title: "Sustainable clearance",
-        caption: "A more considered path for used hospitality furniture.",
-        gradient:
-          "linear-gradient(160deg, #eee4d7 0%, #bea47f 55%, #574632 100%)",
+        imageSrc: "/gallery-reception.svg",
+        imageAlt: "Reception furniture showcase",
       },
     ],
   },
