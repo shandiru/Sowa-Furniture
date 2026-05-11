@@ -2,7 +2,6 @@ const serviceEntries = [
   {
     slug: "pub-bar-furniture-refurbishment",
     icon: "Armchair",
-    category: "Our Services",
     label: "Service Details",
     title: "Pub & Bar Furniture Refurbishment in Manchester",
     shortDescription:
