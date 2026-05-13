@@ -2,12 +2,30 @@ import { useRef, useState, useCallback, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const services = [
-  { title: "Pub & Bar Furniture Refurbishment" },
-  { title: "Restaurant & Café Furniture Refurbishment" },
-  { title: "Wooden Tabletop & Bar Top Renewal" },
-  { title: "Commercial Reupholstery" },
-  { title: "Made-to-Measure Furniture" },
-  { title: "We Buy Used Hospitality Furniture" }
+  {
+    title: "Pub & Bar Furniture Refurbishment",
+    image: "/Pub.jpg",
+  },
+  {
+    title: "Restaurant & Café Furniture Refurbishment",
+    image: "/Restaurant.jpg",
+  },
+  {
+    title: "Wooden Tabletop & Bar Top Renewal",
+    image: "/Wooden.jpg",
+  },
+  {
+    title: "Commercial Reupholstery",
+    image: "/Commercial.jpg",
+  },
+  {
+    title: "Made-to-Measure Furniture",
+    image: "/Measure.jpg",
+  },
+  {
+    title: "We Buy Used Hospitality Furniture",
+    image: "/Old.jpg",
+  },
 ];
 
 export default function Portfolio() {
@@ -107,9 +125,12 @@ export default function Portfolio() {
               > 
                 <div className="group overflow-hidden rounded-2xl border border-black/10 bg-[var(--sowa-white)] shadow-sm transition hover:shadow-md">
 
-                  {/* IMAGE PLACEHOLDER (Blank as requested) */}
-                  <div className="m-4 flex h-[220px] items-center justify-center rounded-xl bg-[#f3f0e8] text-sm text-[var(--sowa-ink-muted)]">
-                    Image Placeholder
+                  <div className="m-4 overflow-hidden rounded-xl">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="h-[300px] w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
                   </div>
 
                   {/* TEXT */}

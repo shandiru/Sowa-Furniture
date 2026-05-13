@@ -50,7 +50,7 @@ export default function ServiceHero({ service }) {
             <img
               src={heroVisual.imageSrc}
               alt={heroVisual.imageAlt || title}
-              className="block h-full min-h-[360px] w-full object-cover md:min-h-[430px]"
+              className="block h-[360px] w-full object-cover md:h-[530px]"
             />
           )}
         </div>

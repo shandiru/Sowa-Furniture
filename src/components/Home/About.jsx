@@ -2,8 +2,8 @@ import { motion as Motion, useScroll, useTransform } from "framer-motion";
 import { Check } from "lucide-react";
 import { useRef } from "react";
 
-const aboutImageSrc = "/gallery-sideboard.svg";
-const aboutFrontImageSrc = "/gallery-pub-lounge.svg";
+const aboutImageSrc = "/a1.jpg";
+const aboutFrontImageSrc = "/a2.jpg";
 
 export default function AboutSection() {
   const ref = useRef(null);
@@ -55,7 +55,7 @@ export default function AboutSection() {
                 src={aboutFrontImageSrc}
                 loading="lazy"
                 alt="Furniture refurbishment workshop showcase"
-                className="h-[180px] w-full object-cover md:h-[220px]"
+                className="h-[180px] w-full object-cover md:h-[260px]"
               />
             </div>
           </Motion.div>

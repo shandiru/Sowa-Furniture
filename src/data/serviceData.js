@@ -24,7 +24,7 @@ const serviceEntries = [
       ink: "#1f1714",
     },
     heroVisual: {
-      imageSrc: "/pub-bar-service-hero.svg",
+      imageSrc: "/Pub.jpg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -109,7 +109,7 @@ const serviceEntries = [
       ink: "#261915",
     },
     heroVisual: {
-      imageSrc: "/pub-bar-service-hero.svg",
+      imageSrc: "/Restaurant.jpg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -191,7 +191,7 @@ const serviceEntries = [
       ink: "#241810",
     },
     heroVisual: {
-      imageSrc: "/pub-bar-service-hero.svg",
+      imageSrc: "/Wooden.jpg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -273,7 +273,7 @@ const serviceEntries = [
       ink: "#241717",
     },
     heroVisual: {
-      imageSrc: "/pub-bar-service-hero.svg",
+      imageSrc: "/Commercial.jpg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -355,7 +355,7 @@ const serviceEntries = [
       ink: "#1f1714",
     },
     heroVisual: {
-      imageSrc: "/pub-bar-service-hero.svg",
+      imageSrc: "/Measure.jpg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -437,7 +437,7 @@ const serviceEntries = [
       ink: "#201a15",
     },
     heroVisual: {
-      imageSrc: "/pub-bar-service-hero.svg",
+      imageSrc: "/Old.jpg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
