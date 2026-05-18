@@ -147,7 +147,8 @@ const serviceEntries = [
           "Completed pieces come back ready for service with an upgraded overall presentation.",
       },
     ],
-       gallery: [
+    galleryHeading: "Before & After Gallery",
+    gallery: [
       {
         imageSrc: "/gallery-pub-lounge.svg",
         imageAlt: "Pub lounge furniture restoration showcase",
@@ -229,7 +230,8 @@ const serviceEntries = [
           "Once cured, the renewed surfaces are ready to go back into hospitality use.",
       },
     ],
-       gallery: [
+    galleryHeading: "Before & After Gallery",
+    gallery: [
       {
         imageSrc: "/gallery-pub-lounge.svg",
         imageAlt: "Pub lounge furniture restoration showcase",
@@ -311,7 +313,8 @@ const serviceEntries = [
           "The finished seating returns ready to be reintroduced to the space as a complete package.",
       },
     ],
-       gallery: [
+    galleryHeading: "Before & After Gallery",
+    gallery: [
       {
         imageSrc: "/gallery-pub-lounge.svg",
         imageAlt: "Pub lounge furniture restoration showcase",
@@ -393,7 +396,8 @@ const serviceEntries = [
           "Completed items are delivered and, where needed, positioned or installed to fit the space.",
       },
     ],
-        gallery: [
+    galleryHeading: "Before & After Gallery",
+    gallery: [
       {
         imageSrc: "/gallery-pub-lounge.svg",
         imageAlt: "Pub lounge furniture restoration showcase",
@@ -475,21 +479,22 @@ const serviceEntries = [
           "Suitable furniture enters the refurbishment pipeline rather than being discarded unnecessarily.",
       },
     ],
-        gallery: [
+    galleryHeading: "Before & After Gallery",
+    gallery: [
       {
-        imageSrc: "/gallery-pub-lounge.svg",
+        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_03_Before_1.jpeg",
         imageAlt: "Pub lounge furniture restoration showcase",
       },
       {
-        imageSrc: "/gallery-sideboard.svg",
+        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_02_After_1.jpeg",
         imageAlt: "Hospitality furniture sideboard showcase",
       },
       {
-        imageSrc: "/gallery-kitchen.svg",
+        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_01_Before_2.jpeg",
         imageAlt: "Custom kitchen joinery showcase",
       },
       {
-        imageSrc: "/gallery-reception.svg",
+        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_04_After2.jpeg",
         imageAlt: "Reception furniture showcase",
       },
     ],

@@ -3,7 +3,7 @@ export default function ServiceGallery({ service }) {
     <section id="service-gallery" className="px-5 py-12 md:py-16 scroll-m-10">
       <div className="mx-auto max-w-7xl">
         <h2 className="text-[1.95rem] font-medium leading-tight text-[var(--sowa-ink)] md:text-[2rem]">
-          {service.galleryHeading || "Design Showcase / Gallery"}
+          {service.galleryHeading || "Before And After Gallery"}
         </h2>
 
         <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -17,10 +17,10 @@ export default function ServiceGallery({ service }) {
                   src={item.imageSrc}
                   loading="lazy"
                   alt={item.imageAlt || service.galleryHeading || "Service gallery image"}
-                  className="block h-72 w-full object-cover"
+                  className="block h-100 w-full object-cover"
                 />
               ) : (
-                <div className="h-72 w-full" style={{ background: item.gradient }} />
+                <div className="h-100 w-full" style={{ background: item.gradient }} />
               )}
             </article>
           ))}
