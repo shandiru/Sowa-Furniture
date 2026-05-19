@@ -1,6 +1,7 @@
 export default function ServiceHero({ service }) {
   const { theme, category, label, title, heroDescription, primaryAction, secondaryAction, heroVisual } =
     service;
+  const secondaryIsExternal = secondaryAction.href.startsWith("http");
 
   return (
     <section className="px-5 pb-14 pt-32 md:pb-16 md:pt-40">
@@ -35,6 +36,8 @@ export default function ServiceHero({ service }) {
             </a>
             <a
               href={secondaryAction.href}
+              target={secondaryIsExternal ? "_blank" : undefined}
+              rel={secondaryIsExternal ? "noopener noreferrer" : undefined}
               className="inline-flex min-w-[168px] items-center justify-center rounded-full border border-[var(--sowa-gold-soft)] bg-[var(--sowa-white)] px-6 py-3.5 text-sm font-semibold text-[var(--sowa-ink)] transition hover:-translate-y-0.5"
             >
               {secondaryAction.label}

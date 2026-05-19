@@ -5,6 +5,7 @@ import { HashLink } from "react-router-hash-link";
 
 const leftNav = [
   { label: "Home", href: "/#" },
+  { label: "Stock List", href: "/stock-list" },
   {
     label: "Services",
     href: "/#services",

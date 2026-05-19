@@ -4,6 +4,7 @@ import Footer from "./components/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Home from "./page/Home.jsx";
 import ServiceDetail from "./page/ServiceDetail.jsx";
+import StockList from "./page/StockList.jsx";
 import PrivacyPolicy from "./page/PrivacyPolicy.jsx";
 import TermsConditions from "./page/TermsConditions.jsx";
 import { Route, Routes } from "react-router-dom";
@@ -30,6 +31,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/stock-list" element={<StockList />} />
           <Route path="/service/:slug" element={<ServiceDetail />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
