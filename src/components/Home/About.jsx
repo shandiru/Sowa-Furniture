@@ -24,24 +24,24 @@ export default function AboutSection() {
     >
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-2 lg:gap-16">
         {/* Image */}
-        <div data-aos="fade-right" className="relative order-1 lg:order-none">
+        <div data-aos="fade-right" className="relative order-1 lg:order-0">
           <div className="relative z-10 w-[92%] overflow-hidden rounded-[18px] border border-[var(--sowa-gold-soft)] shadow-xl lg:w-[80%]">
             <img
               src={aboutImageSrc}
               loading="lazy"
               alt="Restored hospitality furniture at Sowa Furniture"
-              className="h-[420px] w-full object-cover"
+              className="h-105 w-full object-cover"
             />
 
             <Motion.div
               style={{ y: yBack }}
-              className="absolute left-4 top-4 z-20 w-[58%] overflow-hidden rounded-[16px] border border-white/70 shadow-lg lg:left-6 lg:top-8"
+              className="absolute left-4 top-4 z-20 w-[58%] overflow-hidden rounded-2xl border border-white/70 shadow-lg lg:left-6 lg:top-8"
             >
               <img
                 src={aboutImageSrc}
                 loading="lazy"
                 alt="Furniture restoration close-up"
-                className="h-[220px] w-full object-cover"
+                className="h-55 w-full object-cover"
               />
             </Motion.div>
           </div>
@@ -50,12 +50,12 @@ export default function AboutSection() {
             style={{ y: yFront }}
             className="absolute -bottom-8 right-0 z-30 w-[58%] sm:w-[50%] lg:-right-5 lg:w-[78%]"
           >
-            <div className="overflow-hidden rounded-[16px] border border-[var(--sowa-gold-soft)] bg-[var(--sowa-white)] shadow-lg">
+            <div className="overflow-hidden rounded-2xl border border-[var(--sowa-gold-soft)] bg-[var(--sowa-white)] shadow-lg">
               <img
                 src={aboutFrontImageSrc}
                 loading="lazy"
                 alt="Furniture refurbishment workshop showcase"
-                className="h-[180px] w-full object-cover md:h-[260px]"
+                className="h-48 w-full object-cover md:h-64"
               />
             </div>
           </Motion.div>

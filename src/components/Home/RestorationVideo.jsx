@@ -62,7 +62,7 @@ export default function RestorationVideoSection() {
               
               <video
                 ref={videoRef}
-                className="h-[260px] w-full bg-black object-cover sm:h-[340px] lg:h-[460px]"
+                className="h-65 w-full bg-black object-cover sm:h-85 lg:h-115"
                 src="/new.mp4"
                 playsInline
                 preload="metadata"
