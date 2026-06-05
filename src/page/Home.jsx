@@ -3,6 +3,8 @@ import TrustStatsBand from "../components/Home/TrustStatsBand.jsx";
 import ServicesSection from "../components/Home/ServicesSection.jsx";
 import Portfolio from "../components/Home/Portfolio.jsx";
 import AboutSection from "../components/Home/About.jsx";
+import WorkshopStorySection from "../components/Home/WorkshopStory.jsx";
+import RestorationVideoSection from "../components/Home/RestorationVideo.jsx";
 import Review from "../components/Home/Review.jsx";
 import FAQSection from "../components/Home/Faq.jsx";
 import LocationSection from "../components/Home/LocationSection.jsx";
@@ -17,6 +19,8 @@ function Home() {
       <ServicesSection />
       <Portfolio />
       <AboutSection />
+      <WorkshopStorySection />
+      <RestorationVideoSection />
       <Review />
       <FAQSection />
       <LocationSection />

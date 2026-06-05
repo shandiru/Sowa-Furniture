@@ -67,19 +67,27 @@ const serviceEntries = [
     galleryHeading: "Before & After Gallery",
     gallery: [
       {
-        imageSrc: "/gallery-pub-lounge.svg",
+        imageSrc: "/b1.jpeg",
         imageAlt: "Pub lounge furniture restoration showcase",
       },
       {
-        imageSrc: "/gallery-sideboard.svg",
+        imageSrc: "/a1.jpeg",
         imageAlt: "Hospitality furniture sideboard showcase",
       },
       {
-        imageSrc: "/gallery-kitchen.svg",
+        imageSrc: "/b5.jpeg",
+        imageAlt: "Pub lounge furniture restoration showcase",
+      },
+      {
+        imageSrc: "/a5.jpeg",
+        imageAlt: "Hospitality furniture sideboard showcase",
+      },
+      {
+        imageSrc: "/b2.jpeg",
         imageAlt: "Custom kitchen joinery showcase",
       },
       {
-        imageSrc: "/gallery-reception.svg",
+        imageSrc: "/a2.jpeg",
         imageAlt: "Reception furniture showcase",
       },
     ],
@@ -150,19 +158,27 @@ const serviceEntries = [
     galleryHeading: "Before & After Gallery",
     gallery: [
       {
-        imageSrc: "/gallery-pub-lounge.svg",
+        imageSrc: "/b3.jpeg",
         imageAlt: "Pub lounge furniture restoration showcase",
       },
       {
-        imageSrc: "/gallery-sideboard.svg",
+        imageSrc: "/a3.jpeg",
         imageAlt: "Hospitality furniture sideboard showcase",
       },
       {
-        imageSrc: "/gallery-kitchen.svg",
+        imageSrc: "/b4.jpeg",
         imageAlt: "Custom kitchen joinery showcase",
       },
       {
-        imageSrc: "/gallery-reception.svg",
+        imageSrc: "/a4.jpeg",
+        imageAlt: "Reception furniture showcase",
+      },
+      {
+        imageSrc: "/b2.jpeg",
+        imageAlt: "Custom kitchen joinery showcase",
+      },
+      {
+        imageSrc: "/a2.jpeg",
         imageAlt: "Reception furniture showcase",
       },
     ],
@@ -233,20 +249,28 @@ const serviceEntries = [
     galleryHeading: "Before & After Gallery",
     gallery: [
       {
-        imageSrc: "/gallery-pub-lounge.svg",
+        imageSrc: "/b5.jpeg",
         imageAlt: "Pub lounge furniture restoration showcase",
       },
       {
-        imageSrc: "/gallery-sideboard.svg",
+        imageSrc: "/a5.jpeg",
         imageAlt: "Hospitality furniture sideboard showcase",
       },
       {
-        imageSrc: "/gallery-kitchen.svg",
+        imageSrc: "/b1.jpeg",
         imageAlt: "Custom kitchen joinery showcase",
       },
       {
-        imageSrc: "/gallery-reception.svg",
+        imageSrc: "/a1.jpeg",
         imageAlt: "Reception furniture showcase",
+      },
+      {
+        imageSrc: "/b3.jpeg",
+        imageAlt: "Pub lounge furniture restoration showcase",
+      },
+      {
+        imageSrc: "/a3.jpeg",
+        imageAlt: "Hospitality furniture sideboard showcase",
       },
     ],
   },
