@@ -246,7 +246,7 @@ const serviceEntries = [
           "Once cured, the renewed surfaces are ready to go back into hospitality use.",
       },
     ],
-    galleryHeading: "Before & After Gallery",
+    galleryHeading: "Gallery",
     galleryLayout: "grid",
     gallery: [
       {
