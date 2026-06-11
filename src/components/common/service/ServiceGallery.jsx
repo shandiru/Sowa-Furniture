@@ -3,6 +3,7 @@ import { FaArrowsLeftRight } from "react-icons/fa6";
 
 export default function ServiceGallery({ service }) {
   const galleryItems = service.gallery || [];
+  const isGridGallery = service.galleryLayout === "grid";
 
   const pairs = [];
   for (let i = 0; i < galleryItems.length; i += 2) {
@@ -21,12 +22,37 @@ export default function ServiceGallery({ service }) {
           {service.galleryHeading || "Before And After Gallery"}
         </h2>
 
-        {/* Single row grid that adjusts columns based on screen size */}
-        <div className="mt-5 grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-          {pairs.map((pair, index) => (
-            <BeforeAfterSlider key={index} before={pair.before} after={pair.after} />
-          ))}
-        </div>
+        {isGridGallery ? (
+          <div className="mt-5 w-full max-w-6xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {/* ^ CHANGED: Added max-w-6xl and mx-auto to control overall width if needed */}
+
+            {galleryItems.map((item, index) => (
+              <figure
+                key={`${item.imageSrc || "gallery-item"}-${index}`}
+                className="overflow-hidden rounded-[1.45rem] border border-[var(--sowa-gold-soft)] bg-[var(--sowa-white)] shadow-[0_8px_18px_rgba(0,0,0,0.04)]"
+              >
+                {/* TWEAK HEIGHT HERE: Change aspect-[2/3] to aspect-square, aspect-[4/3], or a fixed h-[350px] */}
+                <div className="aspect-square w-full overflow-hidden bg-[#f4efe8]">
+                  {item.imageSrc ? (
+                    <img
+                      src={item.imageSrc}
+                      alt={item.imageAlt || "Gallery image"}
+                      className="h-full w-full object-cover transition-transform duration-300 hover:scale-[1.02]"
+                    />
+                  ) : (
+                    <div className="h-full w-full" style={{ background: item.gradient }} />
+                  )}
+                </div>
+              </figure>
+            ))}
+          </div>
+        ) : (
+          <div className="mt-5 grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+            {pairs.map((pair, index) => (
+              <BeforeAfterSlider key={index} before={pair.before} after={pair.after} />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

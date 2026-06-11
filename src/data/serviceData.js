@@ -247,30 +247,55 @@ const serviceEntries = [
       },
     ],
     galleryHeading: "Before & After Gallery",
+    galleryLayout: "grid",
     gallery: [
       {
-        imageSrc: "/b5.jpeg",
-        imageAlt: "Pub lounge furniture restoration showcase",
+        imageSrc: "/w1.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 1",
       },
       {
-        imageSrc: "/a5.jpeg",
-        imageAlt: "Hospitality furniture sideboard showcase",
+        imageSrc: "/w2.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 2",
       },
       {
-        imageSrc: "/b1.jpeg",
-        imageAlt: "Custom kitchen joinery showcase",
+        imageSrc: "/w3.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 3",
       },
       {
-        imageSrc: "/a1.jpeg",
-        imageAlt: "Reception furniture showcase",
+        imageSrc: "/w4.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 4",
       },
       {
-        imageSrc: "/b3.jpeg",
-        imageAlt: "Pub lounge furniture restoration showcase",
+        imageSrc: "/w5.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 5",
       },
       {
-        imageSrc: "/a3.jpeg",
-        imageAlt: "Hospitality furniture sideboard showcase",
+        imageSrc: "/w6.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 6",
+      },
+      {
+        imageSrc: "/w7.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 7",
+      },
+      {
+        imageSrc: "/w8.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 8",
+      },
+      {
+        imageSrc: "/w9.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 9",
+      },
+      {
+        imageSrc: "/w10.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 10",
+      },
+      {
+        imageSrc: "/w11.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 11",
+      },
+      {
+        imageSrc: "/w12.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 12",
       },
     ],
   },
