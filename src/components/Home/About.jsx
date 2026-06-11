@@ -2,8 +2,8 @@ import { motion as Motion, useScroll, useTransform } from "framer-motion";
 import { Check } from "lucide-react";
 import { useRef } from "react";
 
-const aboutImageSrc = "/a1.jpg";
-const aboutFrontImageSrc = "/a2.jpg";
+const aboutImageSrc = "/about1.jpeg";
+const aboutFrontImageSrc = "/about2.jpeg";
 
 export default function AboutSection() {
   const ref = useRef(null);
