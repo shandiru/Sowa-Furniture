@@ -379,7 +379,7 @@ const serviceEntries = [
       ink: "#241717",
     },
     heroVisual: {
-      imageSrc: "/Commercial -hero.jpeg",
+      videoSrc: "/cmmerical-hero.mp4",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
