@@ -155,32 +155,82 @@ const serviceEntries = [
           "Completed pieces come back ready for service with an upgraded overall presentation.",
       },
     ],
-    galleryHeading: "Before & After Gallery",
+    galleryHeading: "Gallery",
+    galleryLayout: "grid",
     gallery: [
       {
-        imageSrc: "/b3.jpeg",
-        imageAlt: "Pub lounge furniture restoration showcase",
+        imageSrc: "/Rest1.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 1",
       },
       {
-        imageSrc: "/a3.jpeg",
-        imageAlt: "Hospitality furniture sideboard showcase",
+        imageSrc: "/Rest2.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 2",
       },
       {
-        imageSrc: "/b4.jpeg",
-        imageAlt: "Custom kitchen joinery showcase",
+        imageSrc: "/Rest3.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 3",
       },
       {
-        imageSrc: "/a4.jpeg",
-        imageAlt: "Reception furniture showcase",
+        imageSrc: "/Rest4.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 4",
       },
       {
-        imageSrc: "/b2.jpeg",
-        imageAlt: "Custom kitchen joinery showcase",
+        imageSrc: "/Rest6.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 6",
       },
       {
-        imageSrc: "/a2.jpeg",
-        imageAlt: "Reception furniture showcase",
+        imageSrc: "/Rest7.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 7",
       },
+      {
+        imageSrc: "/Rest8.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 8",
+      },
+      {
+        imageSrc: "/Rest9.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 9",
+      },
+      {
+        imageSrc: "/Rest11.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 11",
+      },
+      {
+        imageSrc: "/Rest12.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 12",
+      },
+      {
+        imageSrc: "/Rest13.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 13",
+      },
+      {
+        imageSrc: "/Rest14.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 14",
+      },
+      {
+        imageSrc: "/Rest16.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 16",
+      },
+      {
+        imageSrc: "/Rest18.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 18",
+      },
+      {
+        imageSrc: "/Rest19.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 19",
+      },
+      {
+        imageSrc: "/Rest20.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 20",
+      },
+      {
+        imageSrc: "/Rest22.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 22",
+      },
+      {
+        imageSrc: "/Rest23.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 23",
+      },
+     
     ],
   },
   {
