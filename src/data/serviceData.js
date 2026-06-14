@@ -329,7 +329,7 @@ const serviceEntries = [
       ink: "#241717",
     },
     heroVisual: {
-      imageSrc: "/Commercial.jpg",
+      imageSrc: "/Commercial -hero.jpeg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -367,24 +367,82 @@ const serviceEntries = [
           "The finished seating returns ready to be reintroduced to the space as a complete package.",
       },
     ],
-    galleryHeading: "Before & After Gallery",
+    galleryHeading: "Gallery",
+    galleryLayout: "grid",
     gallery: [
       {
-        imageSrc: "/gallery-pub-lounge.svg",
-        imageAlt: "Pub lounge furniture restoration showcase",
+        imageSrc: "/Commercial1.jpeg",
+        imageAlt: "Commercial reupholstery showcase 1",
       },
       {
-        imageSrc: "/gallery-sideboard.svg",
-        imageAlt: "Hospitality furniture sideboard showcase",
+        imageSrc: "/Commercial2.jpeg",
+        imageAlt: "Commercial reupholstery showcase 2",
       },
       {
-        imageSrc: "/gallery-kitchen.svg",
-        imageAlt: "Custom kitchen joinery showcase",
+        imageSrc: "/Commercial3.jpeg",
+        imageAlt: "Commercial reupholstery showcase 3",
       },
       {
-        imageSrc: "/gallery-reception.svg",
-        imageAlt: "Reception furniture showcase",
+        imageSrc: "/Commercial4.jpeg",
+        imageAlt: "Commercial reupholstery showcase 4",
       },
+      {
+        imageSrc: "/Commercial5.jpeg",
+        imageAlt: "Commercial reupholstery showcase 5",
+      },
+      {
+        imageSrc: "/Commercial6.jpeg",
+        imageAlt: "Commercial reupholstery showcase 6",
+      },
+      {
+        imageSrc: "/Commercial7.jpeg",
+        imageAlt: "Commercial reupholstery showcase 7",
+      },
+      {
+        imageSrc: "/Commercial8.jpeg",
+        imageAlt: "Commercial reupholstery showcase 8",
+      },
+      {
+        imageSrc: "/Commercial9.jpeg",
+        imageAlt: "Commercial reupholstery showcase 9",
+      },
+      {
+        imageSrc: "/Commercial10.jpeg",
+        imageAlt: "Commercial reupholstery showcase 10",
+      },
+      {
+        imageSrc: "/Commercial11.jpeg",
+        imageAlt: "Commercial reupholstery showcase 11",
+      },
+      {
+        imageSrc: "/Commercial12.jpeg",
+        imageAlt: "Commercial reupholstery showcase 12",
+      },
+      {
+        imageSrc: "/Commercial13.jpeg",
+        imageAlt: "Commercial reupholstery showcase 13",
+      },
+      {
+        imageSrc: "/Commercial14.jpeg",
+        imageAlt: "Commercial reupholstery showcase 14",
+      },
+      {
+        imageSrc: "/Commercial15.jpeg",
+        imageAlt: "Commercial reupholstery showcase 15",
+      },
+      {
+        imageSrc: "/Commercial16.jpeg",
+        imageAlt: "Commercial reupholstery showcase 16",
+      },
+      {
+        imageSrc: "/Commercial17.jpeg",
+        imageAlt: "Commercial reupholstery showcase 17",
+      },
+      {
+        imageSrc: "/Commercial18.jpeg",
+        imageAlt: "Commercial reupholstery showcase 18",
+      },
+    
     ],
   },
   {
