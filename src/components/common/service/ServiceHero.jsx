@@ -2,6 +2,7 @@ export default function ServiceHero({ service }) {
   const { theme, category, label, title, heroDescription, primaryAction, secondaryAction, heroVisual } =
     service;
   const secondaryIsExternal = secondaryAction.href.startsWith("http");
+  const heroMediaAlt = heroVisual.imageAlt || title;
 
   return (
     <section className="px-5 pb-14 pt-32 md:pb-16 md:pt-40">
@@ -49,10 +50,22 @@ export default function ServiceHero({ service }) {
           className="relative min-h-[360px] overflow-hidden rounded-[2rem] border border-[var(--sowa-gold-soft)] shadow-[0_18px_60px_rgba(0,0,0,0.08)] md:min-h-[430px]"
           style={{ background: heroVisual.gradient }}
         >
+          {heroVisual.videoSrc && (
+            <video
+              className="block h-[360px] w-full object-cover md:h-[530px]"
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-label={heroMediaAlt}
+            >
+              <source src={heroVisual.videoSrc} type="video/mp4" />
+            </video>
+          )}
           {heroVisual.imageSrc && (
             <img
               src={heroVisual.imageSrc}
-              alt={heroVisual.imageAlt || title}
+              alt={heroMediaAlt}
               className="block h-[360px] w-full object-cover md:h-[530px]"
             />
           )}

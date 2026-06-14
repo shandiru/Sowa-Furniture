@@ -24,7 +24,7 @@ const serviceEntries = [
       ink: "#1f1714",
     },
     heroVisual: {
-      imageSrc: "/Pub.jpg",
+      videoSrc: "/manchester.mp4",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -117,7 +117,7 @@ const serviceEntries = [
       ink: "#261915",
     },
     heroVisual: {
-      imageSrc: "/Restaurant.jpg",
+      videoSrc: "/rest-video.mp4",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -155,32 +155,82 @@ const serviceEntries = [
           "Completed pieces come back ready for service with an upgraded overall presentation.",
       },
     ],
-    galleryHeading: "Before & After Gallery",
+    galleryHeading: "Gallery",
+    galleryLayout: "grid",
     gallery: [
       {
-        imageSrc: "/b3.jpeg",
-        imageAlt: "Pub lounge furniture restoration showcase",
+        imageSrc: "/Rest1.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 1",
       },
       {
-        imageSrc: "/a3.jpeg",
-        imageAlt: "Hospitality furniture sideboard showcase",
+        imageSrc: "/Rest2.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 2",
       },
       {
-        imageSrc: "/b4.jpeg",
-        imageAlt: "Custom kitchen joinery showcase",
+        imageSrc: "/Rest3.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 3",
       },
       {
-        imageSrc: "/a4.jpeg",
-        imageAlt: "Reception furniture showcase",
+        imageSrc: "/Rest4.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 4",
       },
       {
-        imageSrc: "/b2.jpeg",
-        imageAlt: "Custom kitchen joinery showcase",
+        imageSrc: "/Rest6.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 6",
       },
       {
-        imageSrc: "/a2.jpeg",
-        imageAlt: "Reception furniture showcase",
+        imageSrc: "/Rest7.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 7",
       },
+      {
+        imageSrc: "/Rest8.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 8",
+      },
+      {
+        imageSrc: "/Rest9.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 9",
+      },
+      {
+        imageSrc: "/Rest11.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 11",
+      },
+      {
+        imageSrc: "/Rest12.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 12",
+      },
+      {
+        imageSrc: "/Rest13.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 13",
+      },
+      {
+        imageSrc: "/Rest14.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 14",
+      },
+      {
+        imageSrc: "/Rest16.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 16",
+      },
+      {
+        imageSrc: "/Rest18.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 18",
+      },
+      {
+        imageSrc: "/Rest19.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 19",
+      },
+      {
+        imageSrc: "/Rest20.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 20",
+      },
+      {
+        imageSrc: "/Rest22.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 22",
+      },
+      {
+        imageSrc: "/Rest23.jpeg",
+        imageAlt: "Restaurant cafe furniture refurbishment showcase 23",
+      },
+     
     ],
   },
   {
@@ -208,7 +258,7 @@ const serviceEntries = [
       ink: "#241810",
     },
     heroVisual: {
-      imageSrc: "/Wooden.jpg",
+      imageSrc: "/newhero.jpeg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -249,6 +299,7 @@ const serviceEntries = [
     galleryHeading: "Gallery",
     galleryLayout: "grid",
     gallery: [
+       
       {
         imageSrc: "/w1.jpeg",
         imageAlt: "Wooden tabletop and bar top renewal showcase 1",
@@ -297,6 +348,10 @@ const serviceEntries = [
         imageSrc: "/w12.jpeg",
         imageAlt: "Wooden tabletop and bar top renewal showcase 12",
       },
+      {
+        imageSrc: "/gallery.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 1",
+      },
     ],
   },
   {
@@ -324,7 +379,7 @@ const serviceEntries = [
       ink: "#241717",
     },
     heroVisual: {
-      imageSrc: "/Commercial.jpg",
+      videoSrc: "/cmmerical-hero.mp4",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -362,24 +417,82 @@ const serviceEntries = [
           "The finished seating returns ready to be reintroduced to the space as a complete package.",
       },
     ],
-    galleryHeading: "Before & After Gallery",
+    galleryHeading: "Gallery",
+    galleryLayout: "grid",
     gallery: [
       {
-        imageSrc: "/gallery-pub-lounge.svg",
-        imageAlt: "Pub lounge furniture restoration showcase",
+        imageSrc: "/Commercial1.jpeg",
+        imageAlt: "Commercial reupholstery showcase 1",
       },
       {
-        imageSrc: "/gallery-sideboard.svg",
-        imageAlt: "Hospitality furniture sideboard showcase",
+        imageSrc: "/Commercial2.jpeg",
+        imageAlt: "Commercial reupholstery showcase 2",
       },
       {
-        imageSrc: "/gallery-kitchen.svg",
-        imageAlt: "Custom kitchen joinery showcase",
+        imageSrc: "/Commercial3.jpeg",
+        imageAlt: "Commercial reupholstery showcase 3",
       },
       {
-        imageSrc: "/gallery-reception.svg",
-        imageAlt: "Reception furniture showcase",
+        imageSrc: "/Commercial4.jpeg",
+        imageAlt: "Commercial reupholstery showcase 4",
       },
+      {
+        imageSrc: "/Commercial5.jpeg",
+        imageAlt: "Commercial reupholstery showcase 5",
+      },
+      {
+        imageSrc: "/Commercial6.jpeg",
+        imageAlt: "Commercial reupholstery showcase 6",
+      },
+      {
+        imageSrc: "/Commercial7.jpeg",
+        imageAlt: "Commercial reupholstery showcase 7",
+      },
+      {
+        imageSrc: "/Commercial8.jpeg",
+        imageAlt: "Commercial reupholstery showcase 8",
+      },
+      {
+        imageSrc: "/Commercial9.jpeg",
+        imageAlt: "Commercial reupholstery showcase 9",
+      },
+      {
+        imageSrc: "/Commercial10.jpeg",
+        imageAlt: "Commercial reupholstery showcase 10",
+      },
+      {
+        imageSrc: "/Commercial11.jpeg",
+        imageAlt: "Commercial reupholstery showcase 11",
+      },
+      {
+        imageSrc: "/Commercial12.jpeg",
+        imageAlt: "Commercial reupholstery showcase 12",
+      },
+      {
+        imageSrc: "/Commercial13.jpeg",
+        imageAlt: "Commercial reupholstery showcase 13",
+      },
+      {
+        imageSrc: "/Commercial14.jpeg",
+        imageAlt: "Commercial reupholstery showcase 14",
+      },
+      {
+        imageSrc: "/Commercial15.jpeg",
+        imageAlt: "Commercial reupholstery showcase 15",
+      },
+      {
+        imageSrc: "/Commercial16.jpeg",
+        imageAlt: "Commercial reupholstery showcase 16",
+      },
+      {
+        imageSrc: "/Commercial17.jpeg",
+        imageAlt: "Commercial reupholstery showcase 17",
+      },
+      {
+        imageSrc: "/Commercial18.jpeg",
+        imageAlt: "Commercial reupholstery showcase 18",
+      },
+    
     ],
   },
   {
@@ -490,7 +603,7 @@ const serviceEntries = [
       ink: "#201a15",
     },
     heroVisual: {
-      imageSrc: "/Old.jpg",
+      imageSrc: "/hos-hero.jpeg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -528,24 +641,50 @@ const serviceEntries = [
           "Suitable furniture enters the refurbishment pipeline rather than being discarded unnecessarily.",
       },
     ],
-    galleryHeading: "Before & After Gallery",
+    galleryHeading: "Gallery",
+    galleryLayout: "grid",
     gallery: [
       {
-        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_03_Before_1.jpeg",
-        imageAlt: "Pub lounge furniture restoration showcase",
+        imageSrc: "/hos1.jpeg",
+        imageAlt: "Used hospitality furniture showcase 1",
       },
       {
-        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_02_After_1.jpeg",
-        imageAlt: "Hospitality furniture sideboard showcase",
+        imageSrc: "/hos2.jpeg",
+        imageAlt: "Used hospitality furniture showcase 2",
       },
       {
-        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_01_Before_2.jpeg",
-        imageAlt: "Custom kitchen joinery showcase",
+        imageSrc: "/hos3.jpeg",
+        imageAlt: "Used hospitality furniture showcase 3",
       },
       {
-        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_04_After2.jpeg",
-        imageAlt: "Reception furniture showcase",
+        imageSrc: "/hos4.jpeg",
+        imageAlt: "Used hospitality furniture showcase 4",
       },
+      {
+        imageSrc: "/hos5.jpeg",
+        imageAlt: "Used hospitality furniture showcase 5",
+      },
+      {
+        imageSrc: "/hos6.jpeg",
+        imageAlt: "Used hospitality furniture showcase 6",
+      },
+      {
+        imageSrc: "/hos7.jpeg",
+        imageAlt: "Used hospitality furniture showcase 7",
+      },
+      {
+        imageSrc: "/hos8.jpeg",
+        imageAlt: "Used hospitality furniture showcase 8",
+      },
+      {
+        imageSrc: "/hos9.jpeg",
+        imageAlt: "Used hospitality furniture showcase 9",
+      },
+      {
+        imageSrc: "/hos10.jpeg",
+        imageAlt: "Used hospitality furniture showcase 10",
+      },
+     
     ],
   },
 ];
