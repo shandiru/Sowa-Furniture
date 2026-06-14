@@ -26,6 +26,7 @@ export default function ServiceGallery({ service }) {
           <div className="mx-auto mt-5 grid w-full max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {galleryItems.map((item, index) => {
               const isLastOddItem = galleryItems.length % 2 === 1 && index === galleryItems.length - 1;
+              const useNaturalImageSizing = false;
 
               return (
               <figure
@@ -34,12 +35,18 @@ export default function ServiceGallery({ service }) {
                   isLastOddItem ? "sm:col-span-2 lg:col-span-1 xl:col-span-2" : ""
                 }`}
               >
-                <div className="aspect-[4/3] w-full overflow-hidden bg-[#f4efe8] p-3">
+                <div
+                  className={`w-full overflow-hidden bg-[#f4efe8] ${
+                    useNaturalImageSizing ? "p-0" : "aspect-[4/3] p-3"
+                  }`}
+                >
                   {item.imageSrc ? (
                     <img
                       src={item.imageSrc}
                       alt={item.imageAlt || "Gallery image"}
-                      className="h-full w-full object-contain transition-transform duration-300 hover:scale-[1.02]"
+                      className={`w-full transition-transform duration-300 hover:scale-[1.02] ${
+                        useNaturalImageSizing ? "h-auto object-cover" : "h-full object-contain"
+                      }`}
                     />
                   ) : (
                     <div className="h-full w-full" style={{ background: item.gradient }} />

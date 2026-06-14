@@ -495,7 +495,7 @@ const serviceEntries = [
       ink: "#201a15",
     },
     heroVisual: {
-      imageSrc: "/Old.jpg",
+      imageSrc: "/hos-hero.jpeg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -533,24 +533,50 @@ const serviceEntries = [
           "Suitable furniture enters the refurbishment pipeline rather than being discarded unnecessarily.",
       },
     ],
-    galleryHeading: "Before & After Gallery",
+    galleryHeading: "Gallery",
+    galleryLayout: "grid",
     gallery: [
       {
-        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_03_Before_1.jpeg",
-        imageAlt: "Pub lounge furniture restoration showcase",
+        imageSrc: "/hos1.jpeg",
+        imageAlt: "Used hospitality furniture showcase 1",
       },
       {
-        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_02_After_1.jpeg",
-        imageAlt: "Hospitality furniture sideboard showcase",
+        imageSrc: "/hos2.jpeg",
+        imageAlt: "Used hospitality furniture showcase 2",
       },
       {
-        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_01_Before_2.jpeg",
-        imageAlt: "Custom kitchen joinery showcase",
+        imageSrc: "/hos3.jpeg",
+        imageAlt: "Used hospitality furniture showcase 3",
       },
       {
-        imageSrc: "/Restaurant_Cafe_Furniture_Refurbishment_attachment_04_After2.jpeg",
-        imageAlt: "Reception furniture showcase",
+        imageSrc: "/hos4.jpeg",
+        imageAlt: "Used hospitality furniture showcase 4",
       },
+      {
+        imageSrc: "/hos5.jpeg",
+        imageAlt: "Used hospitality furniture showcase 5",
+      },
+      {
+        imageSrc: "/hos6.jpeg",
+        imageAlt: "Used hospitality furniture showcase 6",
+      },
+      {
+        imageSrc: "/hos7.jpeg",
+        imageAlt: "Used hospitality furniture showcase 7",
+      },
+      {
+        imageSrc: "/hos8.jpeg",
+        imageAlt: "Used hospitality furniture showcase 8",
+      },
+      {
+        imageSrc: "/hos9.jpeg",
+        imageAlt: "Used hospitality furniture showcase 9",
+      },
+      {
+        imageSrc: "/hos10.jpeg",
+        imageAlt: "Used hospitality furniture showcase 10",
+      },
+     
     ],
   },
 ];
