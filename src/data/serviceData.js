@@ -208,7 +208,7 @@ const serviceEntries = [
       ink: "#241810",
     },
     heroVisual: {
-      imageSrc: "/Wooden.jpg",
+      imageSrc: "/newhero.jpeg",
       imageAlt: "Pub and bar furniture refurbishment showcase",
       gradient:
         "linear-gradient(135deg, #efe2d8 0%, #d5b79b 44%, #8a634e 100%)",
@@ -249,6 +249,7 @@ const serviceEntries = [
     galleryHeading: "Gallery",
     galleryLayout: "grid",
     gallery: [
+       
       {
         imageSrc: "/w1.jpeg",
         imageAlt: "Wooden tabletop and bar top renewal showcase 1",
@@ -296,6 +297,10 @@ const serviceEntries = [
       {
         imageSrc: "/w12.jpeg",
         imageAlt: "Wooden tabletop and bar top renewal showcase 12",
+      },
+      {
+        imageSrc: "/gallery.jpeg",
+        imageAlt: "Wooden tabletop and bar top renewal showcase 1",
       },
     ],
   },
